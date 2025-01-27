@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Registration</name>
+        <order>100</order>
+        <roles>x_1567520_shark_0.training_administrator</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 18:53:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ee3f8a6683d712106e57c6a6feaad3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_app_application_ee3f8a6683d712106e57c6a6feaad3e0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 18:53:28</sys_updated_on>
+        <title>Registration</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_app_application_ee3f8a6683d712106e57c6a6feaad3e0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Registration</name><order>100</order><roles>x_1567520_shark_0.training_administrator</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-27 18:53:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ee3f8a6683d712106e57c6a6feaad3e0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Registration</sys_name><sys_overrides/><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_update_name>sys_app_application_ee3f8a6683d712106e57c6a6feaad3e0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-27 18:53:28</sys_updated_on><title>Registration</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>535244114</payload_hash>
+        <record_name>Registration</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 18:53:28</sys_created_on>
+        <sys_id>223f8a6683d712106e57c6a6feaad3e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a91c8f6f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 18:53:28</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>263f8a66c3d712105620b6c75f64e7e3</update_guid>
+        <update_guid_history>263f8a66c3d712105620b6c75f64e7e3:535244114</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Registration">07f6d222831b12106e57c6a6feaad388</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:27:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>4164dd0a74814d82a1b3afdfbe8ec331</sys_id>
+        <sys_metadata>ee3f8a6683d712106e57c6a6feaad3e0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registration</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_app_application_ee3f8a6683d712106e57c6a6feaad3e0</sys_update_name>
+        <sys_update_version display_value="sys_app_application_ee3f8a6683d712106e57c6a6feaad3e0">223f8a6683d712106e57c6a6feaad3e4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:27:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

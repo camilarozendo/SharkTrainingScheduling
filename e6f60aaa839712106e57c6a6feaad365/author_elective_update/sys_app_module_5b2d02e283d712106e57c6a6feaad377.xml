@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Training Schedules</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1567520_shark_0_training_schedule</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 18:44:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b2d02e283d712106e57c6a6feaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training Schedules</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_app_module_5b2d02e283d712106e57c6a6feaad377</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 18:44:31</sys_updated_on>
+        <timeline_page/>
+        <title>Training Schedules</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_app_module_5b2d02e283d712106e57c6a6feaad377</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application/><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Training Schedules</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1567520_shark_0_training_schedule</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-27 18:44:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5b2d02e283d712106e57c6a6feaad377</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Training Schedules</sys_name><sys_overrides/><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_update_name>sys_app_module_5b2d02e283d712106e57c6a6feaad377</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-27 18:44:31</sys_updated_on><timeline_page/><title>Training Schedules</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1276392740</payload_hash>
+        <record_name>Training Schedules</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:27:28</sys_created_on>
+        <sys_id>ac079222831b12106e57c6a6feaad360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a93bad800000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:27:28</sys_updated_on>
+        <type>Module</type>
+        <update_guid>5b2d02e2fad71210e50177b4e3067d79</update_guid>
+        <update_guid_history>5b2d02e2fad71210e50177b4e3067d79:-1019280989,5b2d02e2fad71210e50177b4e3067d79:-1019280989</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Training Schedules">fc17daee83d712106e57c6a6feaad3ff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:27:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>2f5592a8472744a28e57127e7a95b9d1</sys_id>
+        <sys_metadata>5b2d02e283d712106e57c6a6feaad377</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Training Schedules</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_app_module_5b2d02e283d712106e57c6a6feaad377</sys_update_name>
+        <sys_update_version display_value="sys_app_module_5b2d02e283d712106e57c6a6feaad377">ac079222831b12106e57c6a6feaad360</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:27:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

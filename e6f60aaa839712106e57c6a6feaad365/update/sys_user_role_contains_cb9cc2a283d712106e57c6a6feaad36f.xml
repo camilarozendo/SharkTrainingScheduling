@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="approver_user" name="approver_user">debab85bff02110053ccffffffffffb6</contains>
+        <role display_value="x_1567520_shark_0.training_administrator" name="x_1567520_shark_0.training_administrator">5b4c4e6283d712106e57c6a6feaad3f9</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 18:42:02</sys_created_on>
+        <sys_id>cb9cc2a283d712106e57c6a6feaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approver_user.x_1567520_shark_0.training_administrator</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_user_role_contains_cb9cc2a283d712106e57c6a6feaad36f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 18:42:02</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

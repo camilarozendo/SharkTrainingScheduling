@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="name" label="Name" language="en" table="x_1567520_shark_0_registration">
+    <sys_documentation element="group_of_instructors" label="Group of Instructors" language="en" table="x_1567520_shark_0_training_schedule">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>name</element>
+            <element>group_of_instructors</element>
             <help/>
             <hint/>
-            <label>Name</label>
+            <label>Group of Instructors</label>
             <language>en</language>
-            <name>x_1567520_shark_0_registration</name>
-            <plural>Names</plural>
+            <name>x_1567520_shark_0_training_schedule</name>
+            <plural>Group of Instructors</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:00:56</sys_created_on>
+            <sys_created_on>2025-01-27 21:46:38</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Name</sys_name>
+            <sys_name>Group of Instructors</sys_name>
             <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
             <sys_policy/>
             <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
-            <sys_update_name>sys_documentation_x_1567520_shark_0_registration_name_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1567520_shark_0_training_schedule_group_of_instructors_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:00:56</sys_updated_on>
+            <sys_updated_on>2025-01-27 21:46:38</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

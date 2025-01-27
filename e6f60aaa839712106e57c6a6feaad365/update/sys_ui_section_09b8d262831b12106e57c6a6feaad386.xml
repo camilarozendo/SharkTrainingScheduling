@@ -4,69 +4,83 @@
             <element>course</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:45:07</sys_created_on>
-            <sys_id>cf0b52a6831b12106e57c6a6feaad35e</sys_id>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>4a5bb6ae839b12106e57c6a6feaad3c9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:45:07</sys_updated_on>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>group_of_instructors</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>ce5bb6ae839b12106e57c6a6feaad3c9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>instructor</element>
-            <position>1</position>
+            <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:45:07</sys_created_on>
-            <sys_id>430b52a6831b12106e57c6a6feaad391</sys_id>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>465bb6ae839b12106e57c6a6feaad3ca</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:45:07</sys_updated_on>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>2</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:45:07</sys_created_on>
-            <sys_id>c70b52a6831b12106e57c6a6feaad391</sys_id>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>ca5bb6ae839b12106e57c6a6feaad3ca</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:45:07</sys_updated_on>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number_of_vacancies</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:45:07</sys_created_on>
-            <sys_id>4f0b52a6831b12106e57c6a6feaad391</sys_id>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>425bb6ae839b12106e57c6a6feaad3cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:45:07</sys_updated_on>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>course_date</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:45:07</sys_created_on>
-            <sys_id>c30b52a6831b12106e57c6a6feaad392</sys_id>
+            <sys_created_on>2025-01-27 22:06:13</sys_created_on>
+            <sys_id>c65bb6ae839b12106e57c6a6feaad3cb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_schedule" sys_domain="global" view="Default view">09b8d262831b12106e57c6a6feaad386</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:45:07</sys_updated_on>
+            <sys_updated_on>2025-01-27 22:06:13</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Registration Filter</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    var ga = new GlideAjax('RegistrationFilterUtils');
+    ga.addParam('sysparm_name', 'getFilteredRegistrations');
+    ga.getXMLAnswer(function(response) {
+        var registrationIds = JSON.parse(response); // Converte a resposta para um array
+
+        if (registrationIds.length > 0) {
+            // Aplica o filtro para exibir apenas as matrículas retornadas
+            g_list.filter('sys_idIN' + registrationIds.join(','));
+        } else {
+            // Caso não haja matrículas, mostra uma mensagem ou limpa os registros
+            g_list.filter('sys_idISEMPTY');
+        }
+    });
+}
+
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 22:33:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f598847831792106e57c6a6feaad3f1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Registration Filter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_script_client_2f598847831792106e57c6a6feaad3f1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 22:45:18</sys_updated_on>
+        <table>x_1567520_shark_0_registration</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_script_client_2f598847831792106e57c6a6feaad3f1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Registration Filter&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    var ga = new GlideAjax('RegistrationFilterUtils');
+    ga.addParam('sysparm_name', 'getFilteredRegistrations');
+    ga.getXMLAnswer(function(response) {
+        var registrationIds = JSON.parse(response); // Converte a resposta para um array
+
+        if (registrationIds.length &gt; 0) {
+            // Aplica o filtro para exibir apenas as matrículas retornadas
+            g_list.filter('sys_idIN' + registrationIds.join(','));
+        } else {
+            // Caso não haja matrículas, mostra uma mensagem ou limpa os registros
+            g_list.filter('sys_idISEMPTY');
+        }
+    });
+}
+
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-28 22:33:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;2f598847831792106e57c6a6feaad3f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Registration Filter&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Shark Training Scheduling"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_2f598847831792106e57c6a6feaad3f1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-28 22:45:18&lt;/sys_updated_on&gt;&lt;table&gt;x_1567520_shark_0_registration&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1935064721</payload_hash>
+        <record_name>Registration Filter</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 22:45:18</sys_created_on>
+        <sys_id>80ed44cb831792106e57c6a6feaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194af1728cc0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 22:45:18</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>08ed44cb241792108ecbb3482129f4d8</update_guid>
+        <update_guid_history>08ed44cb241792108ecbb3482129f4d8:-1935064721,235c444be0179210604cbe8f785f8ac9:-151804068,632b4cc758179210a11516abe39a990d:-1368736735</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 22:55:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>24949808895644188d1c51d6be9c4a40</sys_id>
+        <sys_metadata>2f598847831792106e57c6a6feaad3f1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Registration Filter</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent display_value="Registration">731f46e283d712106e57c6a6feaad385</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_script_client_2f598847831792106e57c6a6feaad3f1</sys_update_name>
+        <sys_update_version display_value="sys_script_client_2f598847831792106e57c6a6feaad3f1">80ed44cb831792106e57c6a6feaad3d9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 22:55:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

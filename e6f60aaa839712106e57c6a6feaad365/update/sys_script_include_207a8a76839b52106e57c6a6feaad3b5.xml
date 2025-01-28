@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1567520_shark_0.TrainingUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utility functions for filtering training courses based on selected training dates.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[// var TrainingUtils = Class.create();
+// TrainingUtils.prototype = {
+//     initialize: function() {},
+
+//     getCoursesByScheduleDate: function(scheduleDateSysId) {
+// 		gs.info('Schedule Date Sys ID: ' + scheduleDateSysId);
+//         var courses = [];
+
+//         if (!scheduleDateSysId) {
+//             return 'sys_idINnone'; 
+//         }
+
+//         var gr = new GlideRecord('x_1567520_shark_0_training_schedule'); 
+//         gr.addQuery('sys_id', scheduleDateSysId);  
+//         gr.query();
+        
+//         while (gr.next()) {
+//             courses.push(gr.course.sys_id.toString()); 
+//         }
+
+//         return 'sys_idIN' + courses.join(','); 
+//     },
+
+//     type: 'TrainingUtils'
+// };
+
+var TrainingUtils = Class.create();
+TrainingUtils.prototype = {
+    initialize: function() {},
+
+    getCoursesByScheduleDate: function(scheduleDateSysId) {
+        gs.info('Schedule Date Sys ID: ' + scheduleDateSysId);
+        var courses = [];
+
+        // Verificar se o sys_id foi passado corretamente
+        if (!scheduleDateSysId) {
+            gs.info('Nenhum Schedule Date Sys ID fornecido!');
+            return 'sys_idINnone'; // Se não tiver um sys_id válido, retorna "none"
+        }
+
+        var gr = new GlideRecord('x_1567520_shark_0_training_schedule'); 
+        if (!gr.get(scheduleDateSysId)) {
+            gs.info('Agendamento não encontrado para o sys_id fornecido!');
+            return 'sys_idINnone'; // Se o agendamento não for encontrado, retorna "none"
+        }
+
+        var scheduleDate = gr.schedule_date; 
+        gs.info('Data de agendamento associada: ' + scheduleDate);
+
+        // Agora vamos procurar os cursos associados à mesma data de agendamento
+        gr = new GlideRecord('x_1567520_shark_0_training_schedule');
+        gr.addQuery('schedule_date', scheduleDate);  // Procurar pelos cursos com a mesma data
+        gr.query();
+
+        gs.info('Consultando para o Schedule Date Sys ID: ' + scheduleDateSysId);
+
+        while (gr.next()) {
+            gs.info('Processando registro de agendamento: ' + gr.sys_id);
+
+            if (gr.course) {
+                gs.info('Curso encontrado: ' + gr.course.name); 
+                courses.push(gr.course.sys_id.toString()); // Adiciona o sys_id do curso à lista
+            } else {
+                gs.info('Nenhum curso associado ao agendamento de sys_id: ' + gr.sys_id);
+            }
+        }
+
+        if (courses.length > 0) {
+            gs.info('Cursos encontrados: ' + courses.join(','));
+            return 'sys_idIN' + courses.join(','); // Retorna os sys_ids dos cursos encontrados
+        } else {
+            gs.info('Nenhum curso encontrado para o Schedule Date Sys ID: ' + scheduleDateSysId);
+            return 'sys_idINnone'; // Caso não encontre cursos, retorna "none"
+        }
+    },
+
+    type: 'TrainingUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:14:05</sys_created_on>
+        <sys_id>207a8a76839b52106e57c6a6feaad3b5</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>TrainingUtils</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_script_include_207a8a76839b52106e57c6a6feaad3b5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 19:29:22</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>207a8a76839b52106e57c6a6feaad3b5</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 13:14:05</sys_created_on>
+        <sys_id>342b8a76839b52106e57c6a6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 13:14:05</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

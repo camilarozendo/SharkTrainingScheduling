@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>course_date</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:44:34</sys_created_on>
+        <sys_id>adea9e66831b12106e57c6a6feaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>course_date</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_ui_policy_action_adea9e66831b12106e57c6a6feaad30e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:44:34</sys_updated_on>
+        <table>x_1567520_shark_0_training_schedule</table>
+        <ui_policy display_value="Mandatory Fields">76895ee2831b12106e57c6a6feaad3d2</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=adea9e66831b12106e57c6a6feaad30e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_ui_policy_action_adea9e66831b12106e57c6a6feaad30e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>course_date</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-27 19:44:34</sys_created_on><sys_id>adea9e66831b12106e57c6a6feaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>course_date</sys_name><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_update_name>sys_ui_policy_action_adea9e66831b12106e57c6a6feaad30e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-27 19:44:34</sys_updated_on><table>x_1567520_shark_0_training_schedule</table><ui_policy display_value="Mandatory Fields">76895ee2831b12106e57c6a6feaad3d2</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=adea9e66831b12106e57c6a6feaad30e"/></record_update>]]></payload>
+        <payload_hash>-1881522476</payload_hash>
+        <record_name>course_date</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-27 19:44:34</sys_created_on>
+        <sys_id>4bea9666831b12106e57c6a6feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194a94b571a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-27 19:44:34</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>4fea96668c1b12104d20a3e2f6cd6d9c</update_guid>
+        <update_guid_history>4fea96668c1b12104d20a3e2f6cd6d9c:-1881522476</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 15:09:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>6b6d009dd21241f799011b5796c28dc9</sys_id>
+        <sys_metadata>adea9e66831b12106e57c6a6feaad30e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>course_date</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent display_value="Mandatory Fields">76895ee2831b12106e57c6a6feaad3d2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_adea9e66831b12106e57c6a6feaad30e</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_adea9e66831b12106e57c6a6feaad30e">4bea9666831b12106e57c6a6feaad39d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 15:09:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="schedule_date" table="x_1567520_shark_0_registration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="course" table="x_1567520_shark_0_registration">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Schedule Date</column_label>
+        <column_label>Course</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>schedule_date</element>
+        <element>course</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -40,25 +40,26 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_1567520_shark_0_training_schedule">x_1567520_shark_0_training_schedule</reference>
+        <reference display_value="" name="x_1567520_shark_0_training_course">x_1567520_shark_0_training_course</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual>javascript:new TrainingDateUtils().getUniqueScheduleDates(current.schedule_date);</reference_qual>
+        <reference_qual>javascript: new TrainingUtils().getCoursesByScheduleDate(current.schedule_date);&#13;
+</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-27 19:00:55</sys_created_on>
-        <sys_name>Schedule Date</sys_name>
+        <sys_created_on>2025-01-28 13:43:53</sys_created_on>
+        <sys_name>Course</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy/>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
-        <sys_update_name>sys_dictionary_x_1567520_shark_0_registration_schedule_date</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1567520_shark_0_registration_course</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 19:43:42</sys_updated_on>
+        <sys_updated_on>2025-01-28 15:29:33</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d9fc06a283d712106e57c6a6feaad304" label="Training Schedule" max_length="40" name="x_1567520_shark_0_training_schedule" type="collection">
+        <element display="true" label="Schedule Date" max_length="40" name="schedule_date" type="glide_date"/>
         <element label="Course" max_length="32" name="course" reference="x_1567520_shark_0_training_course" type="reference"/>
-        <element display="true" label="Course Date" max_length="40" name="course_date" type="glide_date"/>
         <element label="Group of Instructors" max_length="32" name="group_of_instructors" reference="sys_user_group" type="reference"/>
         <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="javascript:new STSUtils().getUsersByGroup(current.group_of_instructors);&#13;&#10;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Number of Vacancies" max_length="40" name="number_of_vacancies" type="integer"/>

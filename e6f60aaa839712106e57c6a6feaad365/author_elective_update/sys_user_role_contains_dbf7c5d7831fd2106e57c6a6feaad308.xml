@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="DELETE">
+        <contains display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</contains>
+        <role display_value="x_1567520_shark_0.training_instructor" name="x_1567520_shark_0.training_instructor">e8a3daea83d712106e57c6a6feaad3fe</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 21:37:40</sys_created_on>
+        <sys_id>dbf7c5d7831fd2106e57c6a6feaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>user.x_1567520_shark_0.training_instructor</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_user_role_contains_dbf7c5d7831fd2106e57c6a6feaad308</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 21:37:40</sys_updated_on>
+    </sys_user_role_contains>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_user_role_contains_dbf7c5d7831fd2106e57c6a6feaad308</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains"><sys_user_role_contains action="INSERT_OR_UPDATE"><contains display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</contains><role display_value="x_1567520_shark_0.training_instructor" name="x_1567520_shark_0.training_instructor">e8a3daea83d712106e57c6a6feaad3fe</role><sys_class_name>sys_user_role_contains</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-29 21:37:40</sys_created_on><sys_id>dbf7c5d7831fd2106e57c6a6feaad308</sys_id><sys_mod_count>0</sys_mod_count><sys_name>user.x_1567520_shark_0.training_instructor</sys_name><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_update_name>sys_user_role_contains_dbf7c5d7831fd2106e57c6a6feaad308</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-29 21:37:40</sys_updated_on></sys_user_role_contains></record_update>]]></payload>
+        <payload_hash>-1058346772</payload_hash>
+        <record_name>user.x_1567520_shark_0.training_instructor</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 21:37:40</sys_created_on>
+        <sys_id>93f7c5d7831fd2106e57c6a6feaad398</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b3ff9bdb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 21:37:40</sys_updated_on>
+        <type>Contained Role</type>
+        <update_guid>97f7c5d7221fd2103e0f5b9ee2982497</update_guid>
+        <update_guid_history>97f7c5d7221fd2103e0f5b9ee2982497:-1058346772</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 21:38:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_user_role_contains">sys_user_role_contains</sys_db_object>
+        <sys_id>2f3f2ba8d59140809525d52f3a58b240</sys_id>
+        <sys_metadata>dbf7c5d7831fd2106e57c6a6feaad308</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>user.x_1567520_shark_0.training_instructor</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_user_role_contains_dbf7c5d7831fd2106e57c6a6feaad308</sys_update_name>
+        <sys_update_version display_value="sys_user_role_contains_dbf7c5d7831fd2106e57c6a6feaad308">93f7c5d7831fd2106e57c6a6feaad398</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 21:38:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

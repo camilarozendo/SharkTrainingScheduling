@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 20:06:51</sys_created_on>
+        <sys_id>f1123c5b839bd2106e57c6a6feaad30a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1567520_shark_0_registration.x_1567520_shark_0.training_user</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_security_acl display_value="x_1567520_shark_0_registration">6b017b76839392106e57c6a6feaad34b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_f1123c5b839bd2106e57c6a6feaad30a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 20:06:51</sys_updated_on>
+        <sys_user_role display_value="x_1567520_shark_0.training_user" name="x_1567520_shark_0.training_user">5573daaa83d712106e57c6a6feaad381</sys_user_role>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_security_acl_role_f1123c5b839bd2106e57c6a6feaad30a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-29 20:06:51</sys_created_on><sys_id>f1123c5b839bd2106e57c6a6feaad30a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1567520_shark_0_registration.x_1567520_shark_0.training_user</sys_name><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_security_acl display_value="x_1567520_shark_0_registration">6b017b76839392106e57c6a6feaad34b</sys_security_acl><sys_update_name>sys_security_acl_role_f1123c5b839bd2106e57c6a6feaad30a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-29 20:06:51</sys_updated_on><sys_user_role display_value="x_1567520_shark_0.training_user" name="x_1567520_shark_0.training_user">5573daaa83d712106e57c6a6feaad381</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1295055845</payload_hash>
+        <record_name>x_1567520_shark_0_registration.x_1567520_shark_0.training_user</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 20:06:51</sys_created_on>
+        <sys_id>4533f0db839bd2106e57c6a6feaad301</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b3ac77040000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 20:06:51</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>4933f0dbe29bd2103a25cb3193abed00</update_guid>
+        <update_guid_history>4933f0dbe29bd2103a25cb3193abed00:1295055845</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1567520_shark_0_registration.x_1567520_shark_0.training_user">bf33f0db839bd2106e57c6a6feaad305</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 20:07:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>00d3f8dbdcbd49e0800c30d071bb7064</sys_id>
+        <sys_metadata>f1123c5b839bd2106e57c6a6feaad30a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1567520_shark_0_registration.x_1567520_shark_0.training_user</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent display_value="x_1567520_shark_0_registration">6b017b76839392106e57c6a6feaad34b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_f1123c5b839bd2106e57c6a6feaad30a</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_f1123c5b839bd2106e57c6a6feaad30a">4533f0db839bd2106e57c6a6feaad301</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 20:07:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

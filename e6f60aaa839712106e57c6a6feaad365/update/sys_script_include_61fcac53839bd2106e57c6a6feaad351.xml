@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1567520_shark_0.TrainingRegistrationUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Validate that a user is not already enrolled in the same training session.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingRegistrationUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TrainingRegistrationUtils = Class.create();
+TrainingRegistrationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    isUserAlreadyRegistered: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var courseId = this.getParameter('sysparm_course_id'); 
+        var trainingDate = this.getParameter('sysparm_training_date');
+
+        var gr = new GlideRecord('x_1567520_shark_0_registration');
+        gr.addQuery('user', userId);
+        gr.addQuery('course', courseId); 
+        gr.addQuery('schedule_date', trainingDate); 
+        gr.query();
+
+        return gr.hasNext() ? 'true' : 'false'; 
+    },
+
+    getAvailableCourses: function() {
+        var userId = this.getParameter('sysparm_user_id'); 
+        var trainingDate = this.getParameter('sysparm_training_date'); 
+        var results = [];
+
+        var gr = new GlideRecord('x_1567520_shark_0_training_course'); 
+        gr.query();
+
+        while (gr.next()) {
+            var courseId = gr.sys_id;
+            var isRegistered = this.isUserAlreadyRegistered(userId, courseId, trainingDate);
+
+            if (isRegistered === 'false') {
+                results.push({
+                    sys_id: courseId.toString(),
+                    course_name: gr.name.toString()
+                });
+            }
+        }
+
+        return JSON.stringify(results);
+    },
+
+    type: 'TrainingRegistrationUtils'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:41:45</sys_created_on>
+        <sys_id>61fcac53839bd2106e57c6a6feaad351</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>TrainingRegistrationUtils</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_script_include_61fcac53839bd2106e57c6a6feaad351</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 19:53:16</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>61fcac53839bd2106e57c6a6feaad351</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:41:45</sys_created_on>
+        <sys_id>d57d20d3839bd2106e57c6a6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 19:41:45</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

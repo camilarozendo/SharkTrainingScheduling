@@ -2,46 +2,28 @@
     <sys_security_acl action="INSERT_OR_UPDATE">
         <active>true</active>
         <admin_overrides>true</admin_overrides>
-        <advanced>true</advanced>
+        <advanced>false</advanced>
         <applies_to/>
         <condition/>
         <decision_type>allow</decision_type>
-        <description>Allow read for records in x_1567520_shark_0_training_course, for users with role x_1567520_shark_0.training_instructor, and if the ACL script returns true.</description>
+        <description>Allow read for records in x_1567520_shark_0_training_course, for users with roles (x_1567520_shark_0.training_user, x_1567520_shark_0.training_instructor, x_1567520_shark_0.training_administrator).</description>
         <local_or_existing>Local</local_or_existing>
         <name>x_1567520_shark_0_training_course</name>
         <operation display_value="read">read</operation>
-        <script><![CDATA[var loggedInInstructorId = gs.getUserID();
-
-var scheduleGr = new GlideRecord('x_1567520_shark_0_training_schedule');
-scheduleGr.addQuery('instructor', loggedInInstructorId);
-scheduleGr.query();
-
-var hasAccess = false;
-
-while (scheduleGr.next()) {
-    if (scheduleGr.course == current.sys_id) {
-        hasAccess = true; 
-        break; 
-    }
-}
-if (hasAccess) {
-    answer = true;
-} else {
-    answer = false;
-}]]></script>
+        <script/>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 20:41:32</sys_created_on>
         <sys_id>11617fb6839392106e57c6a6feaad305</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>x_1567520_shark_0_training_course</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy/>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_security_acl_11617fb6839392106e57c6a6feaad305</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-28 21:49:13</sys_updated_on>
+        <sys_updated_on>2025-01-29 20:46:53</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
     <sys_es_latest_script action="INSERT_OR_UPDATE">

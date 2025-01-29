@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Prevent Duplicate Training on Submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var courseId = g_form.getValue('course');
+    var trainingDate = g_form.getValue('schedule_date');
+    
+    if (!courseId || !trainingDate) {
+        return true; 
+    }
+
+    var ga = new GlideAjax('TrainingValidationUtils');
+    ga.addParam('sysparm_name', 'validateTrainingDate');
+    ga.addParam('sysparm_course_id', courseId);
+    ga.addParam('sysparm_training_date', trainingDate);
+
+    ga.getAnswer(function(response) {
+        if (response === 'true') {
+            g_form.showFieldMsg('schedule_date', 'Já existe um treinamento para este curso nesta data!', 'error');
+            return false; 
+        } else {
+            return true; 
+        }
+    });
+
+    return false; 
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 13:41:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4cda1b0b83d3d2106e57c6a6feaad3fa</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Prevent Duplicate Training on Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_script_client_4cda1b0b83d3d2106e57c6a6feaad3fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 18:47:02</sys_updated_on>
+        <table>x_1567520_shark_0_training_schedule</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_script_client_4cda1b0b83d3d2106e57c6a6feaad3fa</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Prevent Duplicate Training on Submit&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+    var courseId = g_form.getValue('course');
+    var trainingDate = g_form.getValue('schedule_date');
+    
+    if (!courseId || !trainingDate) {
+        return true; 
+    }
+
+    var ga = new GlideAjax('TrainingValidationUtils');
+    ga.addParam('sysparm_name', 'validateTrainingDate');
+    ga.addParam('sysparm_course_id', courseId);
+    ga.addParam('sysparm_training_date', trainingDate);
+
+    ga.getAnswer(function(response) {
+        if (response === 'true') {
+            g_form.showFieldMsg('schedule_date', 'Já existe um treinamento para este curso nesta data!', 'error');
+            return false; 
+        } else {
+            return true; 
+        }
+    });
+
+    return false; 
+}
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-29 13:41:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;4cda1b0b83d3d2106e57c6a6feaad3fa&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Prevent Duplicate Training on Submit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Shark Training Scheduling"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_4cda1b0b83d3d2106e57c6a6feaad3fa&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-29 18:47:02&lt;/sys_updated_on&gt;&lt;table&gt;x_1567520_shark_0_training_schedule&lt;/table&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1955262310</payload_hash>
+        <record_name>Prevent Duplicate Training on Submit</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 18:47:02</sys_created_on>
+        <sys_id>7be0a8d3835bd2106e57c6a6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b363625d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 18:47:02</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>ffe0a8d36e5bd210aaeb72cf45d450ba</update_guid>
+        <update_guid_history>ffe0a8d36e5bd210aaeb72cf45d450ba:1955262310,a9dfd853545bd21074e68eb1d9ed24db:-386635831,027e90df661bd210e5e804b4e22167a4:-931663441,a52e1053725bd21024f3bf1be9460e6e:-680379234,062d10df0a1bd210b7be43543c0cb1bc:-1256770459,51e3638b0117d210eb8a9d58a7e8abdb:-710886968,b78d1783b017d21062834a1115c55c2b:522241909,247c1bcfc3d3d2104a60419e78eb591e:1249347165,811b5f8fbed3d21003f32bc6ea6c8b22:537257529</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 18:55:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>49240fa2f2b34a00b739c847cd6d1484</sys_id>
+        <sys_metadata>4cda1b0b83d3d2106e57c6a6feaad3fa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Prevent Duplicate Training on Submit</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent display_value="Training Schedule">d9fc06a283d712106e57c6a6feaad304</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_script_client_4cda1b0b83d3d2106e57c6a6feaad3fa</sys_update_name>
+        <sys_update_version display_value="sys_script_client_4cda1b0b83d3d2106e57c6a6feaad3fa">7be0a8d3835bd2106e57c6a6feaad3bb</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 18:55:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

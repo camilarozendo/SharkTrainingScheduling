@@ -12,39 +12,40 @@
         <script><![CDATA[var TrainingValidationUtils = Class.create();
 TrainingValidationUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
     checkCourseSchedule: function() {
-        var encodedQuery = this.getParameter("sysparm_encodedQuery");
-        var schedules = [];
+        var encodedQuery = this.getParameter("sysparm_encodedQuery");  
+        var schedules = []; 
 
         if (encodedQuery) {
-            var scheduleRecord = new GlideRecord("x_1567520_shark_0_training_schedule");
+            var scheduleRecord = new GlideRecord("x_1567520_shark_0_training_schedule"); 
             scheduleRecord.addEncodedQuery(encodedQuery); 
-            scheduleRecord.query(); 
+            scheduleRecord.query();  
 
             while (scheduleRecord.next()) {
                 schedules.push({
                     sys_id: scheduleRecord.sys_id.toString(),
-                    courseName: scheduleRecord.course.name.toString()
+                    courseName: scheduleRecord.course.name.toString() 
                 });
             }
         }
+        
         return JSON.stringify(schedules);
     },
 
-    type: 'TrainingValidationUtils' 
+    type: 'TrainingValidationUtils'  
 });
 ]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-29 13:35:31</sys_created_on>
         <sys_id>0898930f83d3d2106e57c6a6feaad375</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>TrainingValidationUtils</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_script_include_0898930f83d3d2106e57c6a6feaad375</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 19:13:10</sys_updated_on>
+        <sys_updated_on>2025-01-29 22:17:54</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>0898930f83d3d2106e57c6a6feaad375</id>

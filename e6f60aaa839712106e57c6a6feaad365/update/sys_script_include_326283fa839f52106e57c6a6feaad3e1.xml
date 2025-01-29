@@ -9,35 +9,7 @@
         <mobile_callable>false</mobile_callable>
         <name>TrainingDateUtils</name>
         <sandbox_callable>false</sandbox_callable>
-        <script><![CDATA[// var TrainingDateUtils = Class.create();
-// TrainingDateUtils.prototype = {
-//     initialize: function() {},
-
-//     getUniqueScheduleDates: function() {
-//         var uniqueDates = [];
-//         var seenDates = {};
-
-//         var gr = new GlideRecord('x_1567520_shark_0_training_schedule');
-//         gr.query();
-
-//         while (gr.next()) {
-//             var scheduleDate = gr.getValue('schedule_date');
-//             if (!seenDates[scheduleDate]) {
-//                 seenDates[scheduleDate] = gr.getUniqueValue(); 
-//             }
-//         }
-
-//         for (var date in seenDates) {
-//             uniqueDates.push(seenDates[date]); 
-//         }
-
-//         return 'sys_idIN' + uniqueDates.join(',');
-//     },
-
-//     type: 'TrainingDateUtils'
-// };
-
-var TrainingDateUtils = Class.create();
+        <script><![CDATA[var TrainingDateUtils = Class.create();
 TrainingDateUtils.prototype = {
     initialize: function() {},
 
@@ -45,30 +17,23 @@ TrainingDateUtils.prototype = {
         var uniqueDates = [];
         var seenDates = {};
 
-        gs.info('Iniciando a consulta para obter datas de agendamento únicas.');
+        var grDateGroup = new GlideRecord('x_1567520_shark_0_training_schedule');
+        grDateGroup.query();
 
-        var gr = new GlideRecord('x_1567520_shark_0_training_schedule');
-        gr.query();
-
-        if (!gr.hasNext()) {
+        if (!grDateGroup.hasNext()) {
             gs.info('Nenhum registro encontrado.');
         }
 
-        while (gr.next()) {
-            var scheduleDate = gr.getValue('schedule_date');
-            gs.info('Processando data: ' + scheduleDate); 
+        while (grDateGroup.next()) {
+            var scheduleDate = grDateGroup.getValue('schedule_date');
             if (!seenDates[scheduleDate]) {
-                seenDates[scheduleDate] = gr.getUniqueValue(); 
+                seenDates[scheduleDate] = grDateGroup.getUniqueValue(); 
             }
         }
-
-        gs.info('Processamento concluído. Total de datas únicas: ' + Object.keys(seenDates).length); 
 
         for (var date in seenDates) {
             uniqueDates.push(seenDates[date]); 
         }
-
-        gs.info('Retornando sys_ids: ' + uniqueDates.join(',')); 
 
         return 'sys_idIN' + uniqueDates.join(',');
     },
@@ -79,14 +44,14 @@ TrainingDateUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 17:17:51</sys_created_on>
         <sys_id>326283fa839f52106e57c6a6feaad3e1</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>TrainingDateUtils</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_script_include_326283fa839f52106e57c6a6feaad3e1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 13:21:28</sys_updated_on>
+        <sys_updated_on>2025-01-29 23:52:48</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>326283fa839f52106e57c6a6feaad3e1</id>

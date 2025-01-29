@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1567520_shark_0.TrainingRegistrationUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Validate that a user is not already enrolled in the same training session.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>TrainingRegistrationUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var TrainingUtils = Class.create();
+TrainingUtils.prototype = {
+    initialize: function() {
+    },
+
+    refQualAvailableCourses: function() {
+        var userId = gs.getUserID();  
+        var enrolledCourses = []; 
+
+        var grRegistration = new GlideRecord('x_1567520_shark_0_training_registration');
+        grRegistration.addQuery('opened_by', userId);
+        grRegistration.addQuery('registration_status', 3); 
+        grRegistration.query();
+
+        while (grRegistration.next()) {
+            enrolledCourses.push(grRegistration.course.sys_id.toString());
+        }
+
+        var availableCourses = [];
+
+        var grCourse = new GlideRecord('x_1567520_shark_0_training_course');
+        grCourse.query();
+
+        while (grCourse.next()) {
+            if (enrolledCourses.indexOf(grCourse.sys_id.toString()) === -1) {  
+                availableCourses.push(grCourse.sys_id.toString());  
+            }
+        }
+
+        return "sys_idIN" + availableCourses.join(",");
+    },
+
+    type: 'TrainingUtils'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:41:45</sys_created_on>
+        <sys_id>61fcac53839bd2106e57c6a6feaad351</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>TrainingRegistrationUtils</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_script_include_61fcac53839bd2106e57c6a6feaad351</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 23:45:24</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>61fcac53839bd2106e57c6a6feaad351</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 19:41:45</sys_created_on>
+        <sys_id>d57d20d3839bd2106e57c6a6feaad34b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 19:41:45</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_script_include_61fcac53839bd2106e57c6a6feaad351</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1567520_shark_0.TrainingRegistrationUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Validate that a user is not already enrolled in the same training session.&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;TrainingRegistrationUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var TrainingUtils = Class.create();
+TrainingUtils.prototype = {
+    initialize: function() {
+    },
+
+    refQualAvailableCourses: function() {
+        var userId = gs.getUserID();  
+        var enrolledCourses = []; 
+
+        var grRegistration = new GlideRecord('x_1567520_shark_0_training_registration');
+        grRegistration.addQuery('opened_by', userId);
+        grRegistration.addQuery('registration_status', 3); 
+        grRegistration.query();
+
+        while (grRegistration.next()) {
+            enrolledCourses.push(grRegistration.course.sys_id.toString());
+        }
+
+        var availableCourses = [];
+
+        var grCourse = new GlideRecord('x_1567520_shark_0_training_course');
+        grCourse.query();
+
+        while (grCourse.next()) {
+            if (enrolledCourses.indexOf(grCourse.sys_id.toString()) === -1) {  
+                availableCourses.push(grCourse.sys_id.toString());  
+            }
+        }
+
+        return "sys_idIN" + availableCourses.join(",");
+    },
+
+    type: 'TrainingUtils'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-29 19:41:45&lt;/sys_created_on&gt;&lt;sys_id&gt;61fcac53839bd2106e57c6a6feaad351&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;TrainingRegistrationUtils&lt;/sys_name&gt;&lt;sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Shark Training Scheduling"&gt;e6f60aaa839712106e57c6a6feaad365&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_61fcac53839bd2106e57c6a6feaad351&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-29 23:45:24&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;61fcac53839bd2106e57c6a6feaad351&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-29 19:41:45&lt;/sys_created_on&gt;&lt;sys_id&gt;d57d20d3839bd2106e57c6a6feaad34b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-29 19:41:45&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>852008558</payload_hash>
+        <record_name>TrainingRegistrationUtils</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 23:45:24</sys_created_on>
+        <sys_id>de35ad1f839fd2106e57c6a6feaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194b4748c2d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 23:45:24</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>5635ad1f239fd210ff18dca5849514a1</update_guid>
+        <update_guid_history>5635ad1f239fd210ff18dca5849514a1:852008558,91e7515b995fd2101de2030775ef9dc1:519989851,e3821117cd5fd21031190c346599f3fd:-730146143,42107897c39bd2102e3180efbdaea352:588379410,6f9ea413979bd21022d9beb90012bb97:21471399,9d7de4d3119bd21043096ad39d7c9ac6:1747098654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-29 23:47:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>0cebd24dbdd145f08aba4762abd39640</sys_id>
+        <sys_metadata>61fcac53839bd2106e57c6a6feaad351</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TrainingRegistrationUtils</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_script_include_61fcac53839bd2106e57c6a6feaad351</sys_update_name>
+        <sys_update_version display_value="sys_script_include_61fcac53839bd2106e57c6a6feaad351">de35ad1f839fd2106e57c6a6feaad3a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-29 23:47:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

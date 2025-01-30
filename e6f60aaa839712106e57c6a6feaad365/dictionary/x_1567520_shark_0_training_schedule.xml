@@ -5,6 +5,7 @@
         <element label="Group of Instructors" max_length="32" name="group_of_instructors" reference="sys_user_group" type="reference"/>
         <element label="Instructor" max_length="32" name="instructor" reference="sys_user" reference_qual="javascript:new InstructorsUtils().getUsersByGroup(current.group_of_instructors);&#13;&#10;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Number of Vacancies" max_length="40" name="number_of_vacancies" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <index name="index">
             <element name="course"/>
         </index>

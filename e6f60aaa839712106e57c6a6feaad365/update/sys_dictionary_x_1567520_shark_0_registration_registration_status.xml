@@ -13,7 +13,7 @@
         <choice>1</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Registration Status</column_label>
+        <column_label>Enrollment Status</column_label>
         <comments/>
         <create_roles/>
         <default_value>1</default_value>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-27 19:00:55</sys_created_on>
-        <sys_name>Registration Status</sys_name>
+        <sys_name>Enrollment Status</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy/>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_dictionary_x_1567520_shark_0_registration_registration_status</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 01:01:46</sys_updated_on>
+        <sys_updated_on>2025-01-30 19:10:52</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

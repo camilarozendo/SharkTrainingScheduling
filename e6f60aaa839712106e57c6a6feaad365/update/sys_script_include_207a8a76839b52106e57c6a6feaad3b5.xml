@@ -9,65 +9,10 @@
         <mobile_callable>false</mobile_callable>
         <name>TrainingUtils</name>
         <sandbox_callable>false</sandbox_callable>
-        <script><![CDATA[// var TrainingUtils = Class.create();
-// TrainingUtils.prototype = {
-//     initialize: function() {},
-
-//     getCoursesByScheduleDate: function(scheduleDateSysId) {
-//         // gs.info('Schedule Date Sys ID: ' + scheduleDateSysId);
-//         var courses = [];
-
-//         if (!scheduleDateSysId) {
-//             // gs.info('Nenhum Schedule Date Sys ID fornecido!');
-//             return 'sys_idINnone'; 
-//         }
-
-//         var gr = new GlideRecord('x_1567520_shark_0_training_schedule'); 
-//         if (!gr.get(scheduleDateSysId)) {
-//             // gs.info('Agendamento não encontrado para o sys_id fornecido!');
-//             return 'sys_idINnone'; 
-//         }
-
-//         var scheduleDate = gr.schedule_date; 
-//         // gs.info('Data de agendamento associada: ' + scheduleDate);
-
-//         gr = new GlideRecord('x_1567520_shark_0_training_schedule');
-//         gr.addQuery('schedule_date', scheduleDate);  
-//         gr.query();
-
-//         // gs.info('Consultando para o Schedule Date Sys ID: ' + scheduleDateSysId);
-
-//         while (gr.next()) {
-//             // gs.info('Processando registro de agendamento: ' + gr.sys_id);
-
-//             if (gr.course) {
-//                 // gs.info('Curso encontrado: ' + gr.course.name); 
-//                 courses.push(gr.course.sys_id.toString());
-//             } else {
-//                 // gs.info('Nenhum curso associado ao agendamento de sys_id: ' + gr.sys_id);
-//             }
-//         }
-		
-//         if (courses.length > 0) {
-//             // gs.info('Cursos encontrados: ' + courses.join(','));
-//             return 'sys_idIN' + courses.join(',');
-//         } else {
-//             // gs.info('Nenhum curso encontrado para o Schedule Date Sys ID: ' + scheduleDateSysId);
-//             return 'sys_idINnone';
-//         }
-//     },
-	
-//     type: 'TrainingUtils'
-// };
-
-
-//javascript:new x_1567520_shark_0.TrainingUtils().getCoursesByScheduleDate(current.variables.schedule_date);
-
-
-var TrainingUtils = Class.create();
+        <script><![CDATA[var TrainingUtils = Class.create();
 TrainingUtils.prototype = {
     initialize: function() {},
-//traz os cursos relacionados com aquela data:
+    //traz os cursos relacionados com aquela data:
     getCoursesByScheduleDate: function(scheduleDateSysId) {
         var courses = [];
 
@@ -75,7 +20,7 @@ TrainingUtils.prototype = {
             return [];
         }
 
-        var gr = new GlideRecord('x_1567520_shark_0_training_schedule'); 
+        var gr = new GlideRecord('x_1567520_shark_0_training_schedule');
         if (!gr.get(scheduleDateSysId)) {
             return [];
         }
@@ -83,7 +28,7 @@ TrainingUtils.prototype = {
         var scheduleDate = gr.schedule_date;
 
         gr = new GlideRecord('x_1567520_shark_0_training_schedule');
-        gr.addQuery('schedule_date', scheduleDate);  
+        gr.addQuery('schedule_date', scheduleDate);
         gr.query();
 
         while (gr.next()) {
@@ -91,10 +36,10 @@ TrainingUtils.prototype = {
                 courses.push(gr.course.sys_id.toString());
             }
         }
-		
+
         return courses;
     },
-//exibe os cursos que o user não está matriculado:
+    //exibe os cursos que o user não está matriculado:
     refQualCourses: function(scheduleDateSysId) {
         var coursesNotToBeShown = [];
 
@@ -104,7 +49,7 @@ TrainingUtils.prototype = {
 
         var grDate = new GlideRecord("x_1567520_shark_0_registration");
         grDate.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^registration_status=3');
-        grDate.addQuery('schedule_date', scheduleDateSysId); 
+        grDate.addQuery('schedule_date', scheduleDateSysId);
         grDate.query();
 
         while (grDate.next()) {
@@ -113,8 +58,8 @@ TrainingUtils.prototype = {
 
         return coursesNotToBeShown;
     },
-//exibe os cursos que o user não concluiu 3 vezes:
-	refQualCompletedCourses: function() {
+    //exibe os cursos que o user não concluiu 3 vezes:
+    refQualCompletedCourses: function() {
         var userSysId = gs.getUserID();
         var completedCourses = [];
 
@@ -122,7 +67,7 @@ TrainingUtils.prototype = {
         grCompleted.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=3');
         grCompleted.query();
 
-        var courseCount = {}; 
+        var courseCount = {};
 
         while (grCompleted.next()) {
             var courseId = grCompleted.getValue('course');
@@ -140,34 +85,97 @@ TrainingUtils.prototype = {
 
         return completedCourses;
     },
+    //impede que o instrutor se matricule nos próprios treinamentos:
+    refQualInstructorCourses: function() {
+        var userSysId = gs.getUserID();
+        var coursesNotToBeShown = [];
+
+        var grSchedule = new GlideRecord('x_1567520_shark_0_training_schedule');
+        grSchedule.query();
+
+
+        while (grSchedule.next()) {
+            var instructorSysId = grSchedule.getValue('instructor');
+
+            if (instructorSysId == userSysId) {
+                coursesNotToBeShown.push(grSchedule.course.sys_id.toString());
+            }
+        }
+
+        return coursesNotToBeShown;
+    },
+    //exibe os cursos com vagas disponiveis:
+    refQualCoursesWithNoVacancies: function() {
+        var coursesWithNoVacancies = [];
+
+        var grSchedule = new GlideRecord('x_1567520_shark_0_training_schedule');
+        grSchedule.query();
+
+        while (grSchedule.next()) {
+            var vacancies = grSchedule.number_of_vacancies;
+
+            if (vacancies <= 0) {
+                coursesWithNoVacancies.push(grSchedule.course.sys_id.toString());
+            }
+        }
+
+        return coursesWithNoVacancies;
+    },
+    //verifica se a matrícula pode ser realizada naquela data
+    refQualCoursesWithValidDate: function() {
+        var coursesWithValidDate = [];
+
+        var currentDate = new GlideDateTime();
+        var grSchedule = new GlideRecord('x_1567520_shark_0_training_schedule');
+        grSchedule.query();
+
+        while (grSchedule.next()) {
+            var trainingDate = grSchedule.schedule_date;
+
+            var trainingDateAdjusted = new GlideDateTime(trainingDate);
+            trainingDateAdjusted.addDaysUTC(-1);
+
+            if (currentDate.before(trainingDateAdjusted)) {
+                coursesWithValidDate.push(grSchedule.course.sys_id.toString());
+            }
+        }
+
+        return coursesWithValidDate;
+    },
 
     getFilteredCourses: function(scheduleDateSysId) {
-        var coursesByDate = this.getCoursesByScheduleDate(scheduleDateSysId); 
+        var coursesByDate = this.getCoursesByScheduleDate(scheduleDateSysId);
         var coursesToExclude = this.refQualCourses(scheduleDateSysId);
-		var completedCourses = this.refQualCompletedCourses(); 
+        var completedCourses = this.refQualCompletedCourses();
+        var instructorCourses = this.refQualInstructorCourses();
+        var coursesWithNoVacancies = this.refQualCoursesWithNoVacancies();
+        var coursesWithValidDate = this.refQualCoursesWithValidDate();
 
         var filteredCourses = coursesByDate.filter(function(course) {
-            return coursesToExclude.indexOf(course) === -1 && completedCourses.indexOf(course) === -1;
+            return coursesToExclude.indexOf(course) === -1 &&
+                completedCourses.indexOf(course) === -1 &&
+                instructorCourses.indexOf(course) === -1 &&
+                coursesWithNoVacancies.indexOf(course) === -1 &&
+                coursesWithValidDate.indexOf(course) !== -1;
         });
 
         return filteredCourses.length > 0 ? "sys_idIN" + filteredCourses.join(",") : "sys_idINnone";
-    },
+    },   
 
     type: 'TrainingUtils'
-};
-]]></script>
+};]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 13:14:05</sys_created_on>
         <sys_id>207a8a76839b52106e57c6a6feaad3b5</sys_id>
-        <sys_mod_count>57</sys_mod_count>
+        <sys_mod_count>126</sys_mod_count>
         <sys_name>TrainingUtils</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_script_include_207a8a76839b52106e57c6a6feaad3b5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 01:01:24</sys_updated_on>
+        <sys_updated_on>2025-01-30 18:30:13</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>207a8a76839b52106e57c6a6feaad3b5</id>

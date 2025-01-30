@@ -67,7 +67,7 @@
 var TrainingUtils = Class.create();
 TrainingUtils.prototype = {
     initialize: function() {},
-
+//traz os cursos relacionados com aquela data:
     getCoursesByScheduleDate: function(scheduleDateSysId) {
         var courses = [];
 
@@ -94,7 +94,7 @@ TrainingUtils.prototype = {
 		
         return courses;
     },
-
+//exibe os cursos que o user não está matriculado:
     refQualCourses: function(scheduleDateSysId) {
         var coursesNotToBeShown = [];
 
@@ -104,7 +104,7 @@ TrainingUtils.prototype = {
 
         var grDate = new GlideRecord("x_1567520_shark_0_registration");
         grDate.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^registration_status=3');
-        grDate.addQuery('schedule_date', scheduleDateSysId); // Filtra pela mesma data
+        grDate.addQuery('schedule_date', scheduleDateSysId); 
         grDate.query();
 
         while (grDate.next()) {
@@ -113,13 +113,41 @@ TrainingUtils.prototype = {
 
         return coursesNotToBeShown;
     },
+//exibe os cursos que o user não concluiu 3 vezes:
+	refQualCompletedCourses: function() {
+        var userSysId = gs.getUserID();
+        var completedCourses = [];
+
+        var grCompleted = new GlideRecord('x_1567520_shark_0_registration');
+        grCompleted.addEncodedQuery('opened_byDYNAMIC90d1921e5f510100a9ad2572f2b477fe^state=3');
+        grCompleted.query();
+
+        var courseCount = {}; 
+
+        while (grCompleted.next()) {
+            var courseId = grCompleted.getValue('course');
+
+            if (!courseCount[courseId]) {
+                courseCount[courseId] = 0;
+            }
+
+            courseCount[courseId]++;
+
+            if (courseCount[courseId] >= 3) {
+                completedCourses.push(courseId);
+            }
+        }
+
+        return completedCourses;
+    },
 
     getFilteredCourses: function(scheduleDateSysId) {
         var coursesByDate = this.getCoursesByScheduleDate(scheduleDateSysId); 
-        var coursesToExclude = this.refQualCourses(scheduleDateSysId); 
+        var coursesToExclude = this.refQualCourses(scheduleDateSysId);
+		var completedCourses = this.refQualCompletedCourses(); 
 
         var filteredCourses = coursesByDate.filter(function(course) {
-            return coursesToExclude.indexOf(course) === -1;
+            return coursesToExclude.indexOf(course) === -1 && completedCourses.indexOf(course) === -1;
         });
 
         return filteredCourses.length > 0 ? "sys_idIN" + filteredCourses.join(",") : "sys_idINnone";
@@ -132,14 +160,14 @@ TrainingUtils.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-28 13:14:05</sys_created_on>
         <sys_id>207a8a76839b52106e57c6a6feaad3b5</sys_id>
-        <sys_mod_count>53</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>TrainingUtils</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
         <sys_update_name>sys_script_include_207a8a76839b52106e57c6a6feaad3b5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-29 23:46:32</sys_updated_on>
+        <sys_updated_on>2025-01-30 01:01:24</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>207a8a76839b52106e57c6a6feaad3b5</id>

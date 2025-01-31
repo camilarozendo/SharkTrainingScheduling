@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter">
+    <sys_ui_formatter action="DELETE">
+        <active>true</active>
+        <angular_module/>
+        <formatter>process_flow.xml</formatter>
+        <name>Process Approval</name>
+        <seismic_component/>
+        <sys_class_name>sys_ui_formatter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 15:57:17</sys_created_on>
+        <sys_id>482d86bf831392106e57c6a6feaad379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Process Approval</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_ui_formatter_482d86bf831392106e57c6a6feaad379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 15:58:03</sys_updated_on>
+        <table>x_1567520_shark_0_registration</table>
+        <type>formatter</type>
+    </sys_ui_formatter>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</application>
+        <file_path/>
+        <instance_id>499ef269db85461437d72a5913961959</instance_id>
+        <instance_name>dev246208</instance_name>
+        <name>sys_ui_formatter_482d86bf831392106e57c6a6feaad379</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_formatter"><sys_ui_formatter action="INSERT_OR_UPDATE"><active>true</active><angular_module/><formatter>process_flow.xml</formatter><name>Process Approval</name><seismic_component/><sys_class_name>sys_ui_formatter</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-31 15:57:17</sys_created_on><sys_id>482d86bf831392106e57c6a6feaad379</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Process Approval</sys_name><sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package><sys_policy/><sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope><sys_update_name>sys_ui_formatter_482d86bf831392106e57c6a6feaad379</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-31 15:58:03</sys_updated_on><table>x_1567520_shark_0_registration</table><type>formatter</type></sys_ui_formatter></record_update>]]></payload>
+        <payload_hash>1005593853</payload_hash>
+        <record_name>Process Approval</record_name>
+        <reverted_from/>
+        <source>13d74eae831712106e57c6a6feaad361</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 15:58:03</sys_created_on>
+        <sys_id>b76dcabf831392106e57c6a6feaad36a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194bd15637f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 15:58:03</sys_updated_on>
+        <type>UI Formatter</type>
+        <update_guid>bb6dcabfd21392102d070b385f1b6469</update_guid>
+        <update_guid_history>bb6dcabfd21392102d070b385f1b6469:1005593853,7c4dcabf9013921026efe8f30ed5a131:-1530444714</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 15:58:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_formatter">sys_ui_formatter</sys_db_object>
+        <sys_id>398b35c25a7845acbefffa0448413d10</sys_id>
+        <sys_metadata>482d86bf831392106e57c6a6feaad379</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Process Approval</sys_name>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_parent display_value="Registration">731f46e283d712106e57c6a6feaad385</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_scope_delete display_value="">0529f60e7c4f4fd89c56463a19c45010</sys_scope_delete>
+        <sys_update_name>sys_ui_formatter_482d86bf831392106e57c6a6feaad379</sys_update_name>
+        <sys_update_version display_value="sys_ui_formatter_482d86bf831392106e57c6a6feaad379">b76dcabf831392106e57c6a6feaad36a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 15:58:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="course" table="x_1567520_shark_0_registration">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="total_of_vancancies" table="x_1567520_shark_0_training_schedule">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Course</column_label>
+        <column_label>Total Vacancies</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,21 +26,21 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>course</element>
+        <element>total_of_vancancies</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Integer">integer</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>x_1567520_shark_0_registration</name>
+        <max_length>40</max_length>
+        <name>x_1567520_shark_0_training_schedule</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_1567520_shark_0_training_course">x_1567520_shark_0_training_course</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -51,14 +51,14 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-28 13:43:53</sys_created_on>
-        <sys_name>Course</sys_name>
+        <sys_created_on>2025-01-30 23:44:43</sys_created_on>
+        <sys_name>Total Vacancies</sys_name>
         <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
         <sys_policy/>
         <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
-        <sys_update_name>sys_dictionary_x_1567520_shark_0_registration_course</sys_update_name>
+        <sys_update_name>sys_dictionary_x_1567520_shark_0_training_schedule_total_of_vancancies</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-31 00:14:14</sys_updated_on>
+        <sys_updated_on>2025-01-31 00:20:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

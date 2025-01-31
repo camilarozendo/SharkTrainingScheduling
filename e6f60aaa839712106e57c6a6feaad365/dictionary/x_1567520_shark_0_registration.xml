@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="731f46e283d712106e57c6a6feaad385" extends="task" label="Registration" max_length="40" name="x_1567520_shark_0_registration" type="collection">
         <element label="Schedule Date" max_length="32" name="schedule_date" reference="x_1567520_shark_0_training_schedule" reference_qual="javascript:new TrainingDateUtils().getUniqueScheduleDates(current.schedule_date);" type="reference" use_reference_qualifier="advanced"/>
-        <element label="Course" max_length="32" name="course" reference="x_1567520_shark_0_training_course" reference_qual="javascript: new TrainingUtils().getFilteredCourses(current.schedule_date);&#13;&#10;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Course" max_length="32" name="course" reference="x_1567520_shark_0_training_course" type="reference"/>
         <element choice="3" default="1" label="Registration Status" max_length="40" name="registration_status" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Completed" sequence="300" value="3"/>

@@ -4,13 +4,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>0d1652ee83d712106e57c6a6feaad379</sys_id>
+            <sys_created_on>2025-01-31 21:17:04</sys_created_on>
+            <sys_id>70769b7f839792106e57c6a6feaad3e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
+            <sys_updated_on>2025-01-31 21:17:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,83 +18,41 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>811652ee83d712106e57c6a6feaad37a</sys_id>
+            <sys_created_on>2025-01-31 21:17:04</sys_created_on>
+            <sys_id>3c769b7f839792106e57c6a6feaad3e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
+            <sys_updated_on>2025-01-31 21:17:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.begin_split</element>
+            <element>english_description</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>091652ee83d712106e57c6a6feaad37a</sys_id>
+            <sys_created_on>2025-01-31 21:17:04</sys_created_on>
+            <sys_id>b0769b7f839792106e57c6a6feaad3e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
-            <sys_user/>
-            <type>.begin_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>active</element>
-            <position>3</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>8d1652ee83d712106e57c6a6feaad37a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
+            <sys_updated_on>2025-01-31 21:17:04</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>051652ee83d712106e57c6a6feaad37b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sys_updated_on</element>
-            <position>5</position>
+            <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 19:23:25</sys_created_on>
-            <sys_id>051652ee83d712106e57c6a6feaad3c6</sys_id>
+            <sys_created_on>2025-01-31 21:17:04</sys_created_on>
+            <sys_id>38769b7f839792106e57c6a6feaad3e5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 19:23:25</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>assigned_group</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2025-01-27 21:33:59</sys_created_on>
-            <sys_id>75f33262839b12106e57c6a6feaad328</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1567520_shark_0_training_course" sys_domain="global" view="Default view">98459e2e83d712106e57c6a6feaad30d</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-01-27 21:33:59</sys_updated_on>
+            <sys_updated_on>2025-01-31 21:17:04</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

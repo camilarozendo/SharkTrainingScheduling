@@ -1,0 +1,2328 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=10716000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>translate_integration</internal_name>
+        <label_cache>[{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.__action_status__.code","label":"5 - Description Translation to English➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"c5692107-90f7-4662-9583-8a1311f28c13":["condition"]},"attributes":{}},{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.translated_description","label":"5 - Description Translation to English➛Translated Description","reference_display":"Translated Description","type":"string","base_type":"string","usedInstances":{"fd775ff0-5e37-4408-b7a9-8b4aff679d6c":["english_description"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6248b0a8-204d-4b6a-8120-c6f447c9e5c6"}},{"name":"1b217793-6e92-435f-aaaf-2c330f290a34.duration","label":"9 - Convert Seconds into Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"af348a8d-07f0-421b-95da-774d2f52238d":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6363c40e-b9da-40db-9799-ecac462c3e1d"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"1ac6d11a-3a0d-4cf0-b437-e29a27feb775":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5af3678c-13bc-45d6-9d3c-a35570c2d4bb"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Training Course Record","reference":"x_1567520_shark_0_training_course","reference_display":"Training Course","type":"reference","base_type":"reference","usedInstances":{"74f9fd99-b8a4-4a45-a49a-255248e5c8a7":["record"],"fd775ff0-5e37-4408-b7a9-8b4aff679d6c":["record"]},"attributes":{}},{"name":"flow_variable.integration_succefull","label":"Flow Variables➛Integration Succefull","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"8e08bfd3-ecd9-4b76-a01d-7ad67677e41d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"408c884b-aba2-4f31-a9be-a194e4279414"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"8e08bfd3-ecd9-4b76-a01d-7ad67677e41d":["condition"],"191665cd-710e-472c-a141-738a576d247d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"abbc1c15-e09c-4d62-96df-1b71cc0f3c04"}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Training Course Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1567520_shark_0_training_course","column_name":"description","usedInstances":{"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7":["description"]}},{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.__action_status__","label":"5 - Description Translation to English➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD1f2e233f621b9210e6fd83bce0fa99b8","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"bac2d187-f9cb-4a12-9e71-4721c92efb1f"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"191665cd-710e-472c-a141-738a576d247d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dcc9257b-7587-46d2-ab80-d9e11246cc23"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1b217793-6e92-435f-aaaf-2c330f290a34":["seconds"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"86e8bb8e-bd98-477e-9743-899d9082964a"}}]</label_cache>
+        <master_snapshot>c506537f839792106e57c6a6feaad396</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Translate Integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>7906937f839792106e57c6a6feaad335</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:04:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70f5cbf7835792106e57c6a6feaad3bd</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Translate Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name>sys_hub_flow_70f5cbf7835792106e57c6a6feaad3bd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:38</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_variable_value action="delete_multiple" query="document_key=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1567520_shark_0_training_course">descriptionISNOTEMPTY<item endquery="false" field="description" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7906937f839792106e57c6a6feaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:13</sys_updated_on>
+        <table>x_1567520_shark_0_training_course</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>70f5cbf7835792106e57c6a6feaad3bd</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 23:03:38</sys_created_on>
+        <sys_id>cedee37f831b92106e57c6a6feaad394</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:38</sys_updated_on>
+        <trigger display_value="">7906937f839792106e57c6a6feaad335</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INcedee37f831b92106e57c6a6feaad394"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INf4f5cbf7835792106e57c6a6feaad3bf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>70f5cbf7835792106e57c6a6feaad3bd</id>
+        <name>Translate Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:04:58</sys_created_on>
+        <sys_id>f4f5cbf7835792106e57c6a6feaad3bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:04:58</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f4f5cbf7835792106e57c6a6feaad3bf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INd0180b7b835792106e57c6a6feaad329,dc180b7b835792106e57c6a6feaad32d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:14:13</sys_created_on>
+        <sys_id>d0180b7b835792106e57c6a6feaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:14:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d0180b7b835792106e57c6a6feaad329"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:14:13</sys_created_on>
+        <sys_id>dc180b7b835792106e57c6a6feaad32d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:14:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dc180b7b835792106e57c6a6feaad32d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INd8180fbb835792106e57c6a6feaad37c"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:14:13</sys_created_on>
+        <sys_id>d8180fbb835792106e57c6a6feaad37c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:15:06</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLZACuvgS523reNEAu0lhe1sUQSBQ0tAmlqZciVLiLvLvHepiy7o4vmWTvCxgkuKcOTxzhsze/9A5cYHrV/qUuBz0C50JCaEgfLpaAg5LNewIslBzCyJ8IoNwpV/JMIYLPQh9CPUr80JPCI9hsopufPwIl6Zf5J/r+TT+fnLMbq/ftQwnmpPwu2M4MiRMMDFzvCAOI7XWZ9GSk9Vf+SfTfIE2LBZ4c8b9EIR+df9woS9JiLGkwvGjMsUUGI96ZGCB4dmmbVmGYV12TLdnu6bl2wQMAzesclABLxuo2GQOTxKEDxiKEh5BA0shEP9O8NV6xRxJzmhakKeI/Ye7XxpqHQXE7kE2t/7p5Ixkw948YB7cLSULRDaS4cwmAx4vxG2GX3EJlMRcFlziSBzhfrBUkBWIHBGdzIPHcRHwMxNpdvkkDzzC17+IlCFzYwmRIpwyjtQ7GTcRnlCKfjwa3o2vnb8/TYd/jMbOeDSZjm+G09G1/pzm5fwbqx0zhDkWJ0vneS2Azwy4OsCc8cgL2VJ+8iRLIAfzfLHR7zAQPks5qWnYK6aibQ3nCRVHaRitMvZKmxdS9iFDhKM3k9u76ejrn9N/DlZnr0eID6RFnS4tqbOcYQMu2ZBsObVdOs1H9hFqxzDeSKpZMR2t1EXgA7/ebKfj5GyG2mViGUvF1iMRMnJk4BDfd0o8qqWI6SXpZrnV9fuydsNY4BbO+oTqCk6JXDP6hUWYwD1WX8FWuiXO0y/5luNYaAEeJf6jeXGIZEmt8DN6syCznGM6AQ6eLMmCfovKv76yKEL3LaFeB01ZqcVch0N5aUVKWezoxOAPR5Zvnd+kwlul5xxcxqZJqQvUMvqqiE3Ddqlp9I0uob5tGJ5VKuM6mFaUsnL6r1LOhxVzlOqO76GyKsU5eKMs/L0Uk2zLrSBBqSH3jOF5oJlngmYpaBXvsw8yv7Uss+HrbXXuSu3M7Z34CcEv/H09UC3Yw+woDx7Rd48wOpd432dhEAu/6jxqT40JbbNC+yXn79czmh4NQtgNYHvFG9ndhuFCo0SszmB0NjXdAXTAQH+z0drc7mDgesSitN/rg2VWjG4DoxHbhzC4F4SVNCmzzewaNZI0SesAmzsBYM3yDgZ4utnlwmy0umzuY5ja4xyEg1BDhyvbqnnbjDMfirmjC7sWJdmU8qnFTS8HXtfs970+PkSwuGkHXGJ2rC4Z9Hv2ZbdS3DUou2DKBhJ+yvMkWkUpkJbC/5ZNva9X9WsqNAIpVZM5vPcKvJ2m35AsSKn/qWPRUv8IQu02EL/dbNZpE8C2lr5Rz9WE90GhDlZ7XRhuIOe1WwCG/h3Ht0Kr22MLK2/5JqroIdlO6+Q3EXQuuwNqN7sJHTS5yQZMO8x3f2nYsxiS1rJquj3sq+2ksURa2/0Raq3IpHwP2HFRORcp5tlJsV6PFPvky1FRi60PwWPAfqBulV4hTmlZKiY4AS379HWg4YSGQTRGtfzvgPiud1eanANSyvEWrP7LQUU/1aDLDaMOZa3gnwsku1fXGhcOa/ld6U17UuXUz/uEBb9Pul275ZY7qD5hmwC9gPfdd6iDCyBpqqedbeqwfat7Njaqkjq3FbFnCzpr1s196LSsGzvRS1mf3mN2PcAbULzT7vHwP0LEs/DNHgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT IN2233df3b839792106e57c6a6feaad336,300193b7839792106e57c6a6feaad396,40b493fb839792106e57c6a6feaad36a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Convert Seconds into Duration">ae72dff7839792106e57c6a6feaad3dc</action_type>
+        <action_type_parent display_value="Convert Seconds into Duration">60425bf7839792106e57c6a6feaad3fd</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ae72dff7839792106e57c6a6feaad3dc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>191665cd-710e-472c-a141-738a576d247d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:02:58</sys_created_on>
+        <sys_id>2233df3b839792106e57c6a6feaad336</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:04:10</sys_updated_on>
+        <ui_id>1b217793-6e92-435f-aaaf-2c330f290a34</ui_id>
+        <values>H4sIAAAAAAAA/42S207jMBCG38XXaRR6SundCoSEBIu03eUGoWhij1tLjh18KGSjvvvatQkIbvbSn+fwzz/zNBLByJZwrOeM83qzuKwv5xfVGlc1XcOaIwBbME4KoqDDEGmRasVsAEeQPpJx5FK/NkcwAlqJpUFnhsaJDrV3p1OIZML2EobHnBAIPQjJDCqyfXouSA8mFHdoyHb88vW/6iS0KEPobpL3Ta8b+giEcrgPrRK4y3m3E9WGRSEXBcE3h4phUMBBWixIB4qB02aYiEFgD0p+gEMon0bs4M2Kv6HjsopxHMNMNI8/PZtsTcL8GhzsnPHUeTM5pQVFm9xgyMFLd/WZpYCH3gmtUoqLa8jZWvpO/UxWkKnAp014G0RgHweNyvMYfHfQr7/eVd4IdfYkf0pNQU4vcM6I1ruoZyRe/P5qc0LfjUaJXejZdND3Qu2b3uijOPcJsrtyL8OjPJ8WQyv2qgQaZyzDCqC8Cfz6jB/z3d2HMrnfHyVePN7G01nRtt1wymbVklWzJV9Us3azWczWbb2kK7YCzubkVBA72CsJ1n5YFXbUvPg4aDIuW9Qkl2MKNaJ3P4KoI2Y3Ts//AHV7cQpRAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Description Translation to English">47901b77839792106e57c6a6feaad308</action_type>
+        <action_type_parent display_value="Description Translation to English">51ca43bf835792106e57c6a6feaad377</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>47901b77839792106e57c6a6feaad308</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:53:18</sys_created_on>
+        <sys_id>300193b7839792106e57c6a6feaad396</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:04:10</sys_updated_on>
+        <ui_id>cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7</ui_id>
+        <values>H4sIAAAAAAAA/5VSy27bMBD8F55lQbZTOfKtsBGgQNsATZtLEAhLcmkToCiFDyeq4X/vUpKdNO2hPe7sLHdmlg9HpiVbM8GrYs5Xq+tltaoW86LEDytRQqkQQC4LzjJmoUFiSvTC6S7o1hJ4ABMTejxuHEJAWc9zEZ1DG/I3zNOJuFL7zkB//x8jYq+NpA5bPzxmrANHGgI6tj6+a/2rCQMcDVG3v7n4q7XQdwn0wWm7m+rP0/jdGWydTHLmGcOXgFYi6VBgPGasASshtK5n6+AiAeRW3lrTXxh7bQM9xhL3xeuftO66KIrEVEjWBI7dS1lPEY6w2kIAUhJFiG6iin2rBfoxFIkKogmbt9hIuB1NDiMBuDlPtyY29uuYBrs8cL4YIdGTCOyS06R9MqLu9u3zt7PKG22HUKamaQWYSwWBouMxJD1HFvX3dymPyB85o8GGNtYNdB0hdefagx62kOgm3xkqcmXaZ1Ln9c7mIJLDnC4A+Q3h2wG+B6eT3S/0DA2ndT+sfor4Kf0fvlyUisNyVsCCz64qXsxAVDhTnM6irpZlVSh2ypjv/caA969B0YXqp5hsjrFNAdVjxmlk+FgfSdQBpyxOj78AWs3ZxH0DAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:09:21</sys_created_on>
+        <sys_id>40b493fb839792106e57c6a6feaad36a</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:04:10</sys_updated_on>
+        <ui_id>fd775ff0-5e37-4408-b7a9-8b4aff679d6c</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf28hp2tL1bWqFNImBBIgXhiLHvqHWHCezHaCL+t93nTglAsRAYg9offP98jkn99TXDZGCrMgMBI2/xAuexEkypXS6nMXZIsniqUgYQEzGRLMCsNIAL43A8x1TtQ80zdoAcyDSOOK1MaDdfo95IW2l2O4qlGGEb6USmCer65sxqZjBiQ4MWTVPUm+FpFgGCkvPe0xPMbpd5c+i5HWBuFLZB09C5yZkRt82mMEmDyemYwIPDrQABJIzZWFMCqYFc6XZkZUzNQaQtDjTaneo2ErtOqIFe7DyN948o74uB2TGgwiHYxoE6sL5hjl2gZO5q81Br1JysJ0mAnJWK7cexrqCs8rJUnctjmWq7y5VXejTThFyGDD4HrVFEFB5nh55Ryu/2Jb35z3IY6lbSQJFVXKmDifmnJFZ7TychoCCVuOCVZXUt2llyjvZNiOUIrpVeIhyVd7jnVbe6ohxjztCVVl0jPFNG75iRnoS33EMNu/HxO7sWjFrH6mghumv2iPpiAUKaatCK0HaboJv5kZW7itedQcB+H4clj6bv7Zh/MvjQg1mPi7+QxrPF0fzKU3tlpmfKU2dYVJ77rysjYXnJrgMBaN1X/A+T7wBce+Jy3YTXmYQbPEsdjLsHZ12iWCK+YeZYvmZTBFofHpX/M0LdPrqv+1gk9r1twMfgEYWdusJtBcg/B81pYloGs4pXUxFPKHzJZ/MsoxPsiVbTrI4yefAYr7MjiJ0jbaqfUEGI156Q/7hTe/z4RvU6n14LEEJ+4J8vQmhqDyktJPziRFDcnQVkocX6sPcGC9o+/tEnvxvHqqbPwihS0+fCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT IN2633df3b839792106e57c6a6feaad337,2a33df3b839792106e57c6a6feaad334,44e9c37f835792106e57c6a6feaad34d,48e9c37f835792106e57c6a6feaad34e,6633df3b839792106e57c6a6feaad335,6a33df3b839792106e57c6a6feaad333,74690b3f835792106e57c6a6feaad3a1,80b493fb839792106e57c6a6feaad369,e36a8f7f835792106e57c6a6feaad33f,e76a8f7f835792106e57c6a6feaad340"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e33df3b839792106e57c6a6feaad336</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>191665cd-710e-472c-a141-738a576d247d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:02:58</sys_created_on>
+        <sys_id>2633df3b839792106e57c6a6feaad337</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>af348a8d-07f0-421b-95da-774d2f52238d</ui_id>
+        <values>H4sIAAAAAAAA/+1YS3PbOAz+Kx6dHa8o6hH71mm2Mz10u9N4cul0NBQF2ZzSkpaikno9/u9LUpSs2LLzcnbbbU+JAAr4QHyAAG+copZlLat58aaq2CJ3Zp+/jB2Wa5n6f+PkZAXOzElrQSQr8liuS3DGzi3htZbDt5IzymTcHlC6lFUlJ+sbe+R3e2TUO0KXjKcCrLuSCOVFgnBmmz2VdhdzkgBXlt4uC0a1d5aqJ38a4eAS+RF2McKum4QIwtCPwiQLSXQZqHPti1fW82jeoD8SlPkzUwism0KkGhNy3bEKVEKegnKcEV7B2FmRPCWyEOtOIoCkH3O+EyxZLpU9Rx/+VrG/lXHf1ecyUAFSaHTdY2wvrhE3KJoktHEMXeWpTNgA3O14Z+MTcKW+hSEbwuoGbKC+jT9BUMglWQxaKTvtgB1vq7KaQkZqLt+eL0R0hhC9M4WIdYhN+j6WRjVzsKYXSbjNOS14vcr/aGjodBdyc6qqmiNXDxdXXSlUUGq6av5ZMmbXy+LuU8u1dyw3WK2SF5Tw7olIKVhSS52ajQMcVspQvCJlyfJFXIrilpmXVRiryYKrh0nGizvlVLeQCaEayERVB5m8U/IrI74hgukL+KDMqJe3hvjxX7X221yBRRybC9MHKipYKd9QnS8LTqfIVm8vB5KtQMSma8XKLejnXrYOe9KzW9CVsv7bvDFvulCSoTREIUoiHHqqC2GfhhTCKQBCZOq5vS7Uo5QBPDKARxrwyCJ+dGi2VZnLN/LYKl6hZxlbT2laHeufRPofhbkq8VXcUNPGZpyfgdFNrnfJfx0Kv88lLJo4NIEvXYyxO6UBjjoCpylAlkUJ8gANEnhH1QHMlpus8/OLkz86Jwc+gZsNSjwURVN8EcLUu/BxkF0QQrILjypCZd7UJdiftG9ut4cUdkfXQIs8rZ7fjne4DJkhQ35Aj82ECQzMhPtU7oV6v8kezgv/4Vz4i84vofPBEBgXyq3OWo/gJJMGyh5pW/E5VpiUEh+5wRG6emGPrnMzMYj9yXbUA/74EI8sOvi7WXTaS97PxdBCk0BWiP63shN0u8HpleMBZ+hJzrwXD/8d7wYH/la7V8dS1N9jGbcI6To+tYD1jllq7kj3UM3fX+Kf3QD+5bUBZV6QHq38CJ+o/MN14RExPbQv+P+Db9kLa2D4kzP+6WqjoktIa/5KldBlpq2ELAkCNbQdqYTQuz+yqQSM5BJGWcHVzeqnHtxjYdh7Ez3XlvbBGWmPvfu0p6u8D2KoBK536p9hrHvu+PZFM7GxVDWUSoGySjmca9n79tdqrVgrEjDaF90V4quGupNt/wFUsRCk9xYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2233df3b839792106e57c6a6feaad334</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned>current_try,integration_succefull</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c5692107-90f7-4662-9583-8a1311f28c13</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:02:58</sys_created_on>
+        <sys_id>2a33df3b839792106e57c6a6feaad334</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>2e377d88-72fc-43aa-87f3-cc5a88e8ae2c</ui_id>
+        <values>H4sIAAAAAAAA/+1XXWvbMBT9K8GvizM7cT6cPZWVQmBbYc36Moq5lq9TMUVyZSltVvLfd+WPxP1YB4UVCnmzjq7uPfdIJ5fce8qawppyqU7Kkq+kN/951fe4dBh933sS1ujNPWa1RmkSo7de39uAsA6lz4yXhYDt5QFh11xkFFynKkBTBoPam98/2jLbAhMBKQo6uJAGVxRFxTNajtgkDtJRPhuNp/EwDCY4nrIJTHIEyEazMcW1Jz/X1HrLitqzfF0lAvm+htKZYxT0PbwzKDOkmjmIEvveGmQGRtG5FtEI2bkUB+CaEtW9ruGu5L8pdxS4uBypKGt02C+TRqNWHsUZnheGK1kjBlLRaqeEXctvdQ9OXczBCtNR15aUDwvH2ZFoGOUX1+r2e1vwjMuqvWZTKAZivwJjNE+twdLdiOXLx9rU0Jcn94IC107SNRQFl6uk0GrDqzpEez1YCVoMcqFuiZ97SgNgrscBqQmDM8JPK/gSNHcNf6U0Tb0fkt9YXLh7hzRlIQvHPgYx86NsMvTjSZb7YToNGQvyEQsib1eJm9xY11YtUyNIUmtKASXTvDAnRGFD7RltscWqh9h5HrR8KZhKGatlL8+SqpOqww3oQSdH70Mv/OTtdrv+3jCVnhqcAklpGcPcCtGxTvDUO9UFvdpAS2L98axJUXsoeNFDccdDiwPb3kWH7T+aaXyVKiUQ5Pv1Vat8A58+fy//y3oH+R5a78GNvon7omDGZrMo9SGFoR/lo9CHOEUfwjjCaDiNo/A17qva3125x19Xr0dL9Uj/9pN9HDHHEXMcMc+PmEfGOY6ad+Sv46h5m1GTIeMlsVo6Cov2/4zb2NJL46wL3Sr9y/VzwHZ/AFPwafYZDQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4ce9c37f835792106e57c6a6feaad34c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:22:07</sys_created_on>
+        <sys_id>44e9c37f835792106e57c6a6feaad34d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>1ac6d11a-3a0d-4cf0-b437-e29a27feb775</ui_id>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rwtTH+aMKam1E2CoFthbX0ZivmWDpOxGTJk+SkWfB/35Flp2FNaRm73F30nq/3HD/kEOnOtZ2zd/rKWrFW0fLbQxwJ5TX6fYgUNBgtI6YVF05oVQ5CHG1Bdj6wUg7XBnxoJuxspYA5scX3lMKFbSXs71/PZBshucFxeguGZjg00fLwR8jtWywlVCip4a0zQq2pXHB61SnU2SXLWJEvijxN83cXWbUoqiznBSAUlDcVfpiWmX0alPjFLf080u00SRvubWVpHOGjQ8WRRtcgLcZRA4qD02Z/VAwCv1HySdgI5ahd5JMfrfhFvfP53CfWSDsyDMHjsxxPGGS20YLhTesNBsVBJccapmXXqC9hD398rKGTbjo+KZ2lfth6097FaKm+3ejd12ngtVDDgmNQagby+AJHZ6g6h9Z/GJTYUKOygbal45St0VsxFJOXJllLeiS11Dsa6slK/OfWKqEbQXJN+sdBvgcj/BafqQ0VB5sVWMHKgUJq5wyt0A9nKX923lBYcFylDNegBMuMaN3VgNXouo+fI3xC7+EwONyOJpKAZN9/79K04EOH5yC/rehfMH0J83qepfPzTF8szjF9huaXQc5fAdmf/o0cp2n6H+RTkIUtA5DjbgGMv+X4wUMbJtjADUcmLBm589pq+sf2gT0BINiptNPmh1/hSet/A2D3ZqL7BQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40e9c37f835792106e57c6a6feaad34e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>1ac6d11a-3a0d-4cf0-b437-e29a27feb775</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:22:07</sys_created_on>
+        <sys_id>48e9c37f835792106e57c6a6feaad34e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>217e18b2-3855-43a1-bcd7-2b16c97fc954</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6e33df3b839792106e57c6a6feaad334</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>c5692107-90f7-4662-9583-8a1311f28c13</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:02:58</sys_created_on>
+        <sys_id>6633df3b839792106e57c6a6feaad335</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>191665cd-710e-472c-a141-738a576d247d</ui_id>
+        <values>H4sIAAAAAAAA/+1U22rbQBD9FaNnIXSJTeOXElICgbaBJuSlDWK0O7KXrnbVvdhxjf69s7o4JnFoKHnsi9CemZ05ZzRH+0h713pn7/SFtWKlouX3hzgSKmD0vo8UNBgtI6YVF05oVfZAHG1A+hC4tjOl3cytcSbBuplwaCAkfqQkLmwrYXf/lly2FpIbHBm0YKgPxaPl/lnI7VosJVQoqeStM0Kt6LrgdKpTqLNzlrEiXxR5muYfzrJqUVRZzgtAKChvung5CZp97pH4VaWhH+F26qQND7SyNI7w0aHiSK1rkBbjqAHFwWmzOyAGgd8o+QSshXJULgrJj1b8ptr5fB4SaySNDIfg4ViOQxxgttaC4U0bCA6Ig0qOd5iWvlFfBx1h/FiDl24aPyHeUj1sA+nAYqRU36719tvU8EqoXuAYlJqBPJzA0Rgq79CGD4MSGypUNtC2NJyyNXoj+svEpUlWkg5JLfWWmobtSoAF4gnNCJIrwj/18D0YEVR8oTJ0eaBZgRWs7DeRyjlDErp+LOUvHwgNAkcp5TANSrDMiNZdUJ8Njqy7+OUaH23wft8z3IwkEuaNCSWd2XXdD5+mBeuf/HmiQUopmfbKdd3LbX+3uu/hjHOY1/MsnZ92xtnilDNOeOJ1O+R/sUP4gG90Q5qm/+1wbAdhy2GtR2198392w0NY/aGDHfaGIxOWiNwF7Hr694fAjhZAsGNoq83PIOEJ6/4AzWunZkUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e33df3b839792106e57c6a6feaad332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:02:58</sys_created_on>
+        <sys_id>6a33df3b839792106e57c6a6feaad333</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>c5692107-90f7-4662-9583-8a1311f28c13</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyPPaeQkS+n6gibQpEnAJDbtZUzWjX3TWrh2sJ12pep/5zpJt4ltgNAeeavP/Trn5p7uEtuFtgv+yp56rxYmmd/cpokyEaPfu8TACpN5IqyRKihreA+kyRp0FwPnJuDCQQwdnYHSncN3FJbKtxq217/PEkulpcNxaguOegd0yXz3SyhsW+QaatTU7DI4ZRZUriS9GgZNfiJyURbTsmCsmB3n9bSs80KWgFBS3qHw/UHE0cceSV9UF+cR7g+TrJORVs7SBO8CGok0ugHtMU1WYCQE67b3iEOQF0Y/AEtlArVLYvKdVz+od1FVMbFB0ihwCN4/+bi+ARZLqwRetJHggASo9VgjrO5W5vOgIy4eG+h0OCyekM5TP2wj6chipNRcLu3my2HgmTK9wDGorQB9/4JAa6i7gD5+GNS4okZ8BW1Ly+Gts2vVFxOXVbbQ9MgabTc0NF5UBiISz2hHkJ0R/qGHr8GpqOITtaHigWYNXgneXx+1C44k7Pu18O9dJDQIHKXwYRuU4IVTbTilOWscWe/Tp6f76Gp3OyEYmxYyn7BqJibHdS0m9QxmkzovmwohF7P6bcb5QJ77AKHznGfCStzv33ztGCsle3ror9f4NbxxAlVT5ax63hvH0+e88YwrXjZE8QdDxE/4l35gjP03xGNDKM+Hwx619cP/2Q+38fiHCX64G4lCeSJyFbHzwz9+DGzpAJR4DG2s+xYlPGD7nyouGng7BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">38690b3f835792106e57c6a6feaad3a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned>active,retry_count,retry_timeout,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>74690b3f835792106e57c6a6feaad3a1</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>7bc05765-9567-494e-8c62-dceecf4a0bd7</ui_id>
+        <values>H4sIAAAAAAAA/+2ZS0/bQBDHvwraUyvFqd8PekIgJKS2VDTlUpC1LycrHK9Zr4EU5bt31nYeDWkOiKCCfLNnd2f+Mzs/OaM8IlnrstbVSB5VlRgX6PDX9QCJwtjg+REVeMrRIcJUizuOBugO57Ux2PDMRFXmeHbZmTKcV2YLnYicKd75KrECF5ordPi4saRnJU9zTHgOp0eq5p9OOxeCgYXEYWITL4u9IEpcxw55ENEQhxnHmHkhhX2Lw0cLeZtyTQjjSsqc4wIMUjEjxR4g/qB5wThEaoQP0BQXDGupZkuL4pidF/nKMBGFBnfIbH6oxG/w7dtmX8YhK8rbteVr2lWoNdOJFJSfl1rIorVoTPLuDJV5PS2+tfJNbXmG61xv1rYzn2yvfF1BSF6atIzOTnT2YyLvLxaaTkXRVKBbzCXF+fINa60EqTWvzG3VYrRZvtb0Zdud8ZxPIWw6xWUpinFaKnknmlCQ3HQ4zuFlmOXyHiSaVhuaS5LFEGqOh6dgP2nMl1gJU5av4AYOm5A/C3Fb8zPTEwHOvDCKqeV4hFp+wEIrYR61sBcEkU1d5hOC5s0VpLe1yawtZleTtK08bKioEqXu+uZQQyILm8m86x942rUPouhaFQfjajjm+ruSIFjPPlyhh9QJwihw7bSaYHWT2kPoGz5W2CScts6v0OCgqfrHz2g+nw+WqIFTNUuprOEKV7w9xe3ZpJ0ZLU1pG8w8fxdmUbaG2YWRdnDcSduqtwNOLGO8UeD2SNOqNn/TtLqXV0GJUZq4QUSsKIgjyw+Za2ES2xZLuOO4fkip670ASuvtsR+e1iIYqLztQGkx5fCxex2kdn65YvcJUqOluH9o7rF6K1jFIY8JiblFWBJbfhRxK4l8z4qThCV27Cahj18Mq0WD7BOsLoZBy7U32aK1UkY1bFwjy3mKlvNibNGdbAVrbB234g5Gjbitinuu3gpXmBDqUCewuJ3ALz8WulYSssxySORQamcetf1ncNXkPr82vdtGb8eeptW2zBP9+NOPP/34s5fxZwO5fgz6H8B7/9+V9z8GbQWrH4d6vPpx6MXGoQ3G+rGo5+t9jEWMU1GBqpGRcLb4X8gszKBzBF033Ut1Y/JZ2eZ/AJb58T5hGgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">44b493fb839792106e57c6a6feaad368</block>
+        <comment/>
+        <connected_to>c5692107-90f7-4662-9583-8a1311f28c13</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:09:21</sys_created_on>
+        <sys_id>80b493fb839792106e57c6a6feaad369</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eb6a8f7f835792106e57c6a6feaad33e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:24:33</sys_created_on>
+        <sys_id>e36a8f7f835792106e57c6a6feaad33f</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</ui_id>
+        <values>H4sIAAAAAAAA/+1V22rbQBD9laJnIWSrjoPfQkqg0DbQhLy0qRjvjuylq111L3Zc43/vjC62SeKmhEJf6ift2bmcMzsHbxMbQxODv7UX3quFSWZf7tNEGcboe5sYqDGZJcIaqYKypmyBNFmBjnxBn1L5RsPm7oCIpdLSYV+tAUc5AV0y2z66CpsGSw1z1JR4E5wyC0pXkk5zCWMxz99Oi7wYFXl+NhqL8bSo6HcG00lOcUPi5UDuzYcWSU+y5n6E+6GTdZJpjfI8TfAhoJFIvSvQHtOkBiMhWLfZIw5BXht9AJbKhE5yDQ9e/aTi48mEAyskkaKfx/5Y9rMaxmSVwOuGGXZIgLkeZmh1rM2nTghPGSuIOhxNOXqqhw2TZhY9pepmadefh4ZXyrQK+0ttBej9CQLNYR4Den4Z1FhTobKGpqHplI2zK9UmE5c6W2g6ZJW2a2rKq5KBYOIZzQiyK8LftfAdOMUqPlIZSt616ssfkft2OnrGZSeaArxwqgkXVG6FPbld+nT1jrZuu22JrPpeGT0DLhy0T+2jEFhFrXe7rzHPCxlcxG+PM0R0jkkEt+nj8LchT/f8n3D4G86S01FxXp1y1rl4zlnPeOq0ncYv2Ymn8YduyrnWfzsNdqIn9GXnl15b2/zVNrtnT3UdfLc4EoXyROSWsffDHwFfbGgDlDiG1tZ9ZwkHbPcLvMAM/FIGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ef6a8f7f835792106e57c6a6feaad33f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</flow>
+        <flow_variables_assigned>integration_succefull</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:24:33</sys_created_on>
+        <sys_id>e76a8f7f835792106e57c6a6feaad340</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <ui_id>0914ed19-7860-490b-916c-50b6a4279781</ui_id>
+        <values>H4sIAAAAAAAA/+1V227aQBD9lWqfgRpwAPMWKUJCahupoXmpImu8HsOq611nLxCK+PfOYANpVCkf0Dx598ztzJlZ+SBsDE0MfmVvvVdrI+Y/n3pCGcbofBAGahRzQgKuHQRlTe6jlFhFrUVPbEFHtg/pXCrfaNg/dlBw9OkJuVG6dNhlbsBRwoBOzA9vTGHfYK6hQE3BKwr+vADtOYUqCRknkywpxtVsfDPNRsNkgjdTOYFJhQDleJaR3zl4eSX76eEV2Xd6YQJkLqzVCIYA60ommvQEvgQ0JRKPijn1RA2mhGDd/oI4hPLe6CuwoTqUTrDzi1e/KXeasF+F1LPE1na55p18LSw3Vkm8b5hkiwQodBcjrY61+dZ2w8JjBVGHs/BVJ1sH3/09lrM1eiqJDbfFPDvS1cPG7r6fOS2UOSnQGbWVoC83CMGpIgb0PMuoVm/la6Ev/5ooaqypbF5D0yizzhtnt+pUipqrB2tNl0Gl7Y4o8loOQLISA9IcBgvC707wIzjFsnylNBTMJX8Y9RxxyRuTJjM5m6VFHwoY9dNqPOxDVmAfhlmK6WiapcNUHE8jyJ8jd9aK2WmSt8qTg5dONeGWKGyxa//4xLvfVm8fymlJ31+yjwfz8WD+1wdTolSeWK2YwvL8j2HDnjZNydfQzrpf3M8VO/4BfphOPa0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT IN30690b3f835792106e57c6a6feaad389,34690b3f835792106e57c6a6feaad37f,38690b3f835792106e57c6a6feaad382,3c690b3f835792106e57c6a6feaad385,b8690b3f835792106e57c6a6feaad36c,fc690b3f835792106e57c6a6feaad399"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=408c884b-aba2-4f31-a9be-a194e4279414</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_succefull</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Succefull</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>30690b3f835792106e57c6a6feaad389</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=dcc9257b-7587-46d2-ab80-d9e11246cc23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>34690b3f835792106e57c6a6feaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:19:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=86e8bb8e-bd98-477e-9743-899d9082964a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>38690b3f835792106e57c6a6feaad382</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:19:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=abbc1c15-e09c-4d62-96df-1b71cc0f3c04</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>3c690b3f835792106e57c6a6feaad385</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:19:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=5af3678c-13bc-45d6-9d3c-a35570c2d4bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>b8690b3f835792106e57c6a6feaad36c</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a8178215-8312-4ebe-ad80-2e88b0a43b27</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Integration Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</model>
+        <model_id>70f5cbf7835792106e57c6a6feaad3bd</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:19:59</sys_created_on>
+        <sys_id>fc690b3f835792106e57c6a6feaad399</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:19:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INd0180b7b835792106e57c6a6feaad330,dc180b7b835792106e57c6a6feaad32c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:14:13</sys_created_on>
+        <sys_id>d0180b7b835792106e57c6a6feaad330</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:14:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 20:14:13</sys_created_on>
+        <sys_id>dc180b7b835792106e57c6a6feaad32c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 20:14:13</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_70f5cbf7835792106e57c6a6feaad3bd"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>translate_integration</internal_name>
+        <label_cache>[{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.__action_status__.code","label":"5 - Description Translation to English➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"c5692107-90f7-4662-9583-8a1311f28c13":["condition"]},"attributes":{}},{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.translated_description","label":"5 - Description Translation to English➛Translated Description","reference_display":"Translated Description","type":"string","base_type":"string","usedInstances":{"fd775ff0-5e37-4408-b7a9-8b4aff679d6c":["english_description"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6248b0a8-204d-4b6a-8120-c6f447c9e5c6"}},{"name":"1b217793-6e92-435f-aaaf-2c330f290a34.duration","label":"9 - Convert Seconds into Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"af348a8d-07f0-421b-95da-774d2f52238d":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"6363c40e-b9da-40db-9799-ecac462c3e1d"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"1ac6d11a-3a0d-4cf0-b437-e29a27feb775":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"5af3678c-13bc-45d6-9d3c-a35570c2d4bb"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Training Course Record","reference":"x_1567520_shark_0_training_course","reference_display":"Training Course","type":"reference","base_type":"reference","usedInstances":{"74f9fd99-b8a4-4a45-a49a-255248e5c8a7":["record"],"fd775ff0-5e37-4408-b7a9-8b4aff679d6c":["record"]},"attributes":{}},{"name":"flow_variable.integration_succefull","label":"Flow Variables➛Integration Succefull","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"8e08bfd3-ecd9-4b76-a01d-7ad67677e41d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"408c884b-aba2-4f31-a9be-a194e4279414"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"8e08bfd3-ecd9-4b76-a01d-7ad67677e41d":["condition"],"191665cd-710e-472c-a141-738a576d247d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"abbc1c15-e09c-4d62-96df-1b71cc0f3c04"}},{"name":"Created_1.current.description","label":"Trigger - Record Created➛Training Course Record➛Description","reference":"","reference_display":"Description","type":"string","base_type":"string","parent_table_name":"x_1567520_shark_0_training_course","column_name":"description","usedInstances":{"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7":["description"]}},{"name":"cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7.__action_status__","label":"5 - Description Translation to English➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD1f2e233f621b9210e6fd83bce0fa99b8","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"bac2d187-f9cb-4a12-9e71-4721c92efb1f"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"191665cd-710e-472c-a141-738a576d247d":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"dcc9257b-7587-46d2-ab80-d9e11246cc23"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"1b217793-6e92-435f-aaaf-2c330f290a34":["seconds"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"86e8bb8e-bd98-477e-9743-899d9082964a"}}]</label_cache>
+        <master>true</master>
+        <name>Translate Integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Translate Integration">70f5cbf7835792106e57c6a6feaad3bd</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c506537f839792106e57c6a6feaad396</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=c506537f839792106e57c6a6feaad396"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c506537f839792106e57c6a6feaad396"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c506537f839792106e57c6a6feaad396^sys_idNOT INcd06537f839792106e57c6a6feaad397"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c506537f839792106e57c6a6feaad396</id>
+        <name>Translate Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:10</sys_created_on>
+        <sys_id>cd06537f839792106e57c6a6feaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cd06537f839792106e57c6a6feaad397"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c506537f839792106e57c6a6feaad396^sys_idNOT IN5106537f839792106e57c6a6feaad3a9,8106537f839792106e57c6a6feaad399"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:10</sys_created_on>
+        <sys_id>5106537f839792106e57c6a6feaad3a9</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5106537f839792106e57c6a6feaad3a9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:10</sys_created_on>
+        <sys_id>8106537f839792106e57c6a6feaad399</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8106537f839792106e57c6a6feaad399"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=c506537f839792106e57c6a6feaad396^sys_idNOT IN2d06537f839792106e57c6a6feaad3ef"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>2d06537f839792106e57c6a6feaad3ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VZ227jNhD9FUFPLZACuvgS523reNEAu0lhe1sUQSBQ0tAmlqZciVLiLvLvHepiy7o4vmWTvCxgkuKcOTxzhsze/9A5cYHrV/qUuBz0C50JCaEgfLpaAg5LNewIslBzCyJ8IoNwpV/JMIYLPQh9CPUr80JPCI9hsopufPwIl6Zf5J/r+TT+fnLMbq/ftQwnmpPwu2M4MiRMMDFzvCAOI7XWZ9GSk9Vf+SfTfIE2LBZ4c8b9EIR+df9woS9JiLGkwvGjMsUUGI96ZGCB4dmmbVmGYV12TLdnu6bl2wQMAzesclABLxuo2GQOTxKEDxiKEh5BA0shEP9O8NV6xRxJzmhakKeI/Ye7XxpqHQXE7kE2t/7p5Ixkw948YB7cLSULRDaS4cwmAx4vxG2GX3EJlMRcFlziSBzhfrBUkBWIHBGdzIPHcRHwMxNpdvkkDzzC17+IlCFzYwmRIpwyjtQ7GTcRnlCKfjwa3o2vnb8/TYd/jMbOeDSZjm+G09G1/pzm5fwbqx0zhDkWJ0vneS2Azwy4OsCc8cgL2VJ+8iRLIAfzfLHR7zAQPks5qWnYK6aibQ3nCRVHaRitMvZKmxdS9iFDhKM3k9u76ejrn9N/DlZnr0eID6RFnS4tqbOcYQMu2ZBsObVdOs1H9hFqxzDeSKpZMR2t1EXgA7/ebKfj5GyG2mViGUvF1iMRMnJk4BDfd0o8qqWI6SXpZrnV9fuydsNY4BbO+oTqCk6JXDP6hUWYwD1WX8FWuiXO0y/5luNYaAEeJf6jeXGIZEmt8DN6syCznGM6AQ6eLMmCfovKv76yKEL3LaFeB01ZqcVch0N5aUVKWezoxOAPR5Zvnd+kwlul5xxcxqZJqQvUMvqqiE3Ddqlp9I0uob5tGJ5VKuM6mFaUsnL6r1LOhxVzlOqO76GyKsU5eKMs/L0Uk2zLrSBBqSH3jOF5oJlngmYpaBXvsw8yv7Uss+HrbXXuSu3M7Z34CcEv/H09UC3Yw+woDx7Rd48wOpd432dhEAu/6jxqT40JbbNC+yXn79czmh4NQtgNYHvFG9ndhuFCo0SszmB0NjXdAXTAQH+z0drc7mDgesSitN/rg2VWjG4DoxHbhzC4F4SVNCmzzewaNZI0SesAmzsBYM3yDgZ4utnlwmy0umzuY5ja4xyEg1BDhyvbqnnbjDMfirmjC7sWJdmU8qnFTS8HXtfs970+PkSwuGkHXGJ2rC4Z9Hv2ZbdS3DUou2DKBhJ+yvMkWkUpkJbC/5ZNva9X9WsqNAIpVZM5vPcKvJ2m35AsSKn/qWPRUv8IQu02EL/dbNZpE8C2lr5Rz9WE90GhDlZ7XRhuIOe1WwCG/h3Ht0Kr22MLK2/5JqroIdlO6+Q3EXQuuwNqN7sJHTS5yQZMO8x3f2nYsxiS1rJquj3sq+2ksURa2/0Raq3IpHwP2HFRORcp5tlJsV6PFPvky1FRi60PwWPAfqBulV4hTmlZKiY4AS379HWg4YSGQTRGtfzvgPiud1eanANSyvEWrP7LQUU/1aDLDaMOZa3gnwsku1fXGhcOa/ld6U17UuXUz/uEBb9Pul275ZY7qD5hmwC9gPfdd6iDCyBpqqedbeqwfat7Njaqkjq3FbFnCzpr1s196LSsGzvRS1mf3mN2PcAbULzT7vHwP0LEs/DNHgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=c506537f839792106e57c6a6feaad396^sys_idNOT IN2506537f839792106e57c6a6feaad3ed,6506537f839792106e57c6a6feaad3ef,a506537f839792106e57c6a6feaad3ee"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Description Translation to English">47901b77839792106e57c6a6feaad308</action_type>
+        <action_type_parent display_value="Description Translation to English">51ca43bf835792106e57c6a6feaad377</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>47901b77839792106e57c6a6feaad308</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>2506537f839792106e57c6a6feaad3ed</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:00:42</sys_updated_on>
+        <ui_id>cc0062d1-058c-4bbc-b8a8-b13f5ea1c8b7</ui_id>
+        <values>H4sIAAAAAAAA/5VSy27bMBD8F55lQbZTOfKtsBGgQNsATZtLEAhLcmkToCiFDyeq4X/vUpKdNO2hPe7sLHdmlg9HpiVbM8GrYs5Xq+tltaoW86LEDytRQqkQQC4LzjJmoUFiSvTC6S7o1hJ4ABMTejxuHEJAWc9zEZ1DG/I3zNOJuFL7zkB//x8jYq+NpA5bPzxmrANHGgI6tj6+a/2rCQMcDVG3v7n4q7XQdwn0wWm7m+rP0/jdGWydTHLmGcOXgFYi6VBgPGasASshtK5n6+AiAeRW3lrTXxh7bQM9xhL3xeuftO66KIrEVEjWBI7dS1lPEY6w2kIAUhJFiG6iin2rBfoxFIkKogmbt9hIuB1NDiMBuDlPtyY29uuYBrs8cL4YIdGTCOyS06R9MqLu9u3zt7PKG22HUKamaQWYSwWBouMxJD1HFvX3dymPyB85o8GGNtYNdB0hdefagx62kOgm3xkqcmXaZ1Ln9c7mIJLDnC4A+Q3h2wG+B6eT3S/0DA2ndT+sfor4Kf0fvlyUisNyVsCCz64qXsxAVDhTnM6irpZlVSh2ypjv/caA969B0YXqp5hsjrFNAdVjxmlk+FgfSdQBpyxOj78AWs3ZxH0DAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>6506537f839792106e57c6a6feaad3ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <ui_id>fd775ff0-5e37-4408-b7a9-8b4aff679d6c</ui_id>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K5Wf28hp2tL1bWqFNImBBIgXhiLHvqHWHCezHaCL+t93nTglAsRAYg9offP98jkn99TXDZGCrMgMBI2/xAuexEkypXS6nMXZIsniqUgYQEzGRLMCsNIAL43A8x1TtQ80zdoAcyDSOOK1MaDdfo95IW2l2O4qlGGEb6USmCer65sxqZjBiQ4MWTVPUm+FpFgGCkvPe0xPMbpd5c+i5HWBuFLZB09C5yZkRt82mMEmDyemYwIPDrQABJIzZWFMCqYFc6XZkZUzNQaQtDjTaneo2ErtOqIFe7DyN948o74uB2TGgwiHYxoE6sL5hjl2gZO5q81Br1JysJ0mAnJWK7cexrqCs8rJUnctjmWq7y5VXejTThFyGDD4HrVFEFB5nh55Ryu/2Jb35z3IY6lbSQJFVXKmDifmnJFZ7TychoCCVuOCVZXUt2llyjvZNiOUIrpVeIhyVd7jnVbe6ohxjztCVVl0jPFNG75iRnoS33EMNu/HxO7sWjFrH6mghumv2iPpiAUKaatCK0HaboJv5kZW7itedQcB+H4clj6bv7Zh/MvjQg1mPi7+QxrPF0fzKU3tlpmfKU2dYVJ77rysjYXnJrgMBaN1X/A+T7wBce+Jy3YTXmYQbPEsdjLsHZ12iWCK+YeZYvmZTBFofHpX/M0LdPrqv+1gk9r1twMfgEYWdusJtBcg/B81pYloGs4pXUxFPKHzJZ/MsoxPsiVbTrI4yefAYr7MjiJ0jbaqfUEGI156Q/7hTe/z4RvU6n14LEEJ+4J8vQmhqDyktJPziRFDcnQVkocX6sPcGC9o+/tEnvxvHqqbPwihS0+fCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Convert Seconds into Duration">ae72dff7839792106e57c6a6feaad3dc</action_type>
+        <action_type_parent display_value="Convert Seconds into Duration">60425bf7839792106e57c6a6feaad3fd</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>ae72dff7839792106e57c6a6feaad3dc</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>191665cd-710e-472c-a141-738a576d247d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>a506537f839792106e57c6a6feaad3ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:00:42</sys_updated_on>
+        <ui_id>1b217793-6e92-435f-aaaf-2c330f290a34</ui_id>
+        <values>H4sIAAAAAAAA/42S207jMBCG38XXaRR6SundCoSEBIu03eUGoWhij1tLjh18KGSjvvvatQkIbvbSn+fwzz/zNBLByJZwrOeM83qzuKwv5xfVGlc1XcOaIwBbME4KoqDDEGmRasVsAEeQPpJx5FK/NkcwAlqJpUFnhsaJDrV3p1OIZML2EobHnBAIPQjJDCqyfXouSA8mFHdoyHb88vW/6iS0KEPobpL3Ta8b+giEcrgPrRK4y3m3E9WGRSEXBcE3h4phUMBBWixIB4qB02aYiEFgD0p+gEMon0bs4M2Kv6HjsopxHMNMNI8/PZtsTcL8GhzsnPHUeTM5pQVFm9xgyMFLd/WZpYCH3gmtUoqLa8jZWvpO/UxWkKnAp014G0RgHweNyvMYfHfQr7/eVd4IdfYkf0pNQU4vcM6I1ruoZyRe/P5qc0LfjUaJXejZdND3Qu2b3uijOPcJsrtyL8OjPJ8WQyv2qgQaZyzDCqC8Cfz6jB/z3d2HMrnfHyVePN7G01nRtt1wymbVklWzJV9Us3azWczWbb2kK7YCzubkVBA72CsJ1n5YFXbUvPg4aDIuW9Qkl2MKNaJ3P4KoI2Y3Ts//AHV7cQpRAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=c506537f839792106e57c6a6feaad396^sys_idNOT IN1906537f839792106e57c6a6feaad3e5,5506537f839792106e57c6a6feaad3e4,5506537f839792106e57c6a6feaad3e9,5906537f839792106e57c6a6feaad3e7,6106537f839792106e57c6a6feaad3eb,6906537f839792106e57c6a6feaad3ec,9106537f839792106e57c6a6feaad3e3,9506537f839792106e57c6a6feaad3e6,d506537f839792106e57c6a6feaad3e8,e106537f839792106e57c6a6feaad3ea"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">40e9c37f835792106e57c6a6feaad34e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>1ac6d11a-3a0d-4cf0-b437-e29a27feb775</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>1906537f839792106e57c6a6feaad3e5</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>217e18b2-3855-43a1-bcd7-2b16c97fc954</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">4ce9c37f835792106e57c6a6feaad34c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>5506537f839792106e57c6a6feaad3e4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>1ac6d11a-3a0d-4cf0-b437-e29a27feb775</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWteRkkpBLoV1tKXrZhrWU7EZMmT5KSZyX/flSUnYc1oy/a4t+jcr3Ou7yE9UZ1tO2se1JUxfCXJ/OtTRLh0GP7uiYSGkTmhSlbcciWLAYjIBkTnAktp2UqDC024mSwlUMs37COmVNy0AnaPr2fSNReVZmF6CxpnWKbJvP8txCtsVCdQp5c0pXk2y7MkyT5cpOUsL9OsyoFBjg0FlExg6mKkPbkdkOiPeuyudbixmstVeN+GLvcjqHTlWKVJRNizZbJiyKcGYVhEGpAVWKV3B0QzqO6kOAJrLi22Iy752fCfODCbTl1izVAiZT54eBZhgx6ur8ECUumo7XRIpWvFKTN+ORWroRN2cYr5hLvWSfUlFkoxVivRNfKz3wg5NBg/GCKdQRKsdUod9aCjvl+r7ZeR5Q2Xw1ZCUCgK4vACi7srO+v49IQJ1mCjooG2xY0WrVYbPhQjlyZeCXzEtVBbHOquMXYnomSMi4X4BvHrAX4EzZ2KT9gGiz3NEgynxXC52A7XxMg+ImZnFgKMOYrE7RY/OkfRSw7iCr8fV0I1b+3VcJxBxz56aYQTD/T9wHkTaMX+sPf7b12S5NXQ4aUd3lb0PmdcwrSepsn0vDMuZuecccYT77RD9ood3Ld4oxuSJPlvh7+2AzeFP+KgzR/Tv3PDkzt9P/Owa8oNUntw2HL893CBHR4Xp6fQVunvTtQR2/8Ck/Z1Z4cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2233df3b839792106e57c6a6feaad334</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned>current_try,integration_succefull</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c5692107-90f7-4662-9583-8a1311f28c13</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>5506537f839792106e57c6a6feaad3e9</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>2e377d88-72fc-43aa-87f3-cc5a88e8ae2c</ui_id>
+        <values>H4sIAAAAAAAA/+1XyW7bMBD9FYPXWq5ky4vSU5AggIG2ARo3lyIQRhTlEKVIhYtT1/C/dyjJtrIgRYFuaH0TH8mZN2/4MNCGKGcrZ81CnRrDl5KcfLrpEy49ht8bwnNyQkifSCgZflGnNZM2tXqN4AqEY81+zk0lYH19QOgtFzkebkJWoDGCZZqcbB5t1SlGdJKE2aiYjcbTZBiFEzae0glMCgaQj2ZjDCggYwKPnjUceouaw7PE7LryIJeWLTFlA7xt78/3qNK5JxT2CftimcwZMilAGNYnJcgcrMJoO0QzyC+lOAC3GL4ptYQvhn/FjHHozxUMqdBWhv0ybSVq4OIcLFxZ7ah1eq+Y4pSZRpWcFeCEPetizYHLynIlmysWMrG7rYQr5ftGDrIP0OmIM0iCVb5Qz7wto7i6VfcfdiwvuKw1aTeFoiD2K7BW88xZz2dDHF88lrmBngrNBCt9d0qoKi6XaaXVitd5kHY5WApcDAqh7pGff4YDoL7GAbYABheIn9fwNWjuC36HYdp8HyW/c2zunxBkGY1oNA5YmNAgzifDIJnkRRBl04jSsBjRMCbbPjFrcybAmINU2KP0zvlCG+FaidJGZX+Fal7ZUyS1wivYNbbD6ufceXu4fOkwpsJ+y16Rp3Vtdc0r0INOjN6rXvSGbLfb/hP71Upr8NqkxlHKCidEx4jhUyfWrftxO4Yv2jHp2HF+4NS76nD6DuXWoplSgoF8ZNEFivb6omX+P7l0160WPn++l7/KyIdmPDTyg3b8Fi/H4YzOZnEWQAbDIC5GUQBJxgKIkpjFw2kSRz/Hy7Ug2xtvoYbPcez9U4Y6jr3j2DuOvb/dpcex96fGXs4oN8hz4UnNd/99fmONL5nTLnSv9Gdf4QHbfgOvBzDaQQ4AAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ef6a8f7f835792106e57c6a6feaad33f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned>integration_succefull</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>5906537f839792106e57c6a6feaad3e7</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>0914ed19-7860-490b-916c-50b6a4279781</ui_id>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9K5XPQANkgXBbLUJCartSoXtZraKJMwGrjp31ByxF+987Juajq0q99cQp9nv2zJs3HuXAtHeNd3al760Va8Wmzy8dJlTAaH1gomRTxjpMQY20Esrh2oATWuXWc46Vl5LoLUgf+D6tS2EbCfunCDlDnw7jGyFLgzFDA4YCOjRsevhAHTMOk1GWFMNqMrwbZ4N+MsK7MR/BqEKAcjjJKKCEAiUdXVwkfVpeSfqHYrdvAl1oLRFUBL7EmCvS/HkO0gbl2pRBZ9Jh+OZQlUgCq8B1WA2qBKfN/owYhPJRyQuwIQGthTW8WfGLkqZJOFchlcyx5c7bPLrXwtUMHCzJQe68iUf5RguOtjWrxAq8dA/XWHvgsQklt1ccFPJ0W0tfq2+tN+wc4NSsKtYc4dmfrTyx3pJObIIXobhYabXc6N33UyFzoY62RVJqDvK8A+eMKLwLkg/Mi9XHZrTQX9uBEmtKm9fQNEKt88borTimouLq3lrSpldJvSOJ4Un3gAcnetQo6M0Jnx3hJzAi2PKVwtDlkPKHEq8eF+H9pcmETyZp0YUCBt20Gva7kBXYhX6WYjoYZ2k/Ze8dZvf2QYK1F0Opk/mrD7W29kaX8rYX4Qo3onH3JGqL0ZD3lzBBrZ7b2N3G7jZ2/23sSuTCks5VELU4/fcCsaeXLPg1tNPmZ6jwgr3/BtwjYhNBBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e33df3b839792106e57c6a6feaad336</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id>191665cd-710e-472c-a141-738a576d247d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>6106537f839792106e57c6a6feaad3eb</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>af348a8d-07f0-421b-95da-774d2f52238d</ui_id>
+        <values>H4sIAAAAAAAA/+1Z227bOBD9FUHPjld3xX4rkg1QoLtdxEZeFoVAUUObWFrSUlRSr+F/X1KiLrZlN26dwgXylGiGGp6ZOWdEJhszK0VeimKefSgKukjN6d9fRiZNlU3+vjFTtAJzaiYlR4JmaSTWOZgj8xmxUtnha84opiJqFkhfQoucofWTXvK7XmL0luAlZQkHvV2OuNxFADenmz0XTWQEbxK6/q3tha7l2q5lxYENQeCFQUwCFN76MiBDMTC59F7vYcxrnEfgVz+mcq+M4ub5kw5x1xgznihItmWNZJ4C0gQkGoJYASNzhdIEiYyvWwsHlHxOWWdY0lTIeKZa/LWg/8kdPUutIyDzw1D72sdI1602k3sk0EzwEouS66U13LovTcJD1T3VHJ2UtR11MR6BSfczDMXg2jcQw+7H+As4hlSgxWCUvPUOxHG2stEJEFQycXe5FO0LpOhcKEVXpVi373Neuaamq3iHYtY0N2PlKv2z5qvZFuTplNDqJfff1ltZSFSQKworTmqCktkye3ls+PdA0wqrdrIMI9Y+ISE4jUuhWrMxgcFKBopWKM9puohynj3T6mWZxmq8YPJhTFj2IjdVU2WMsAIylopB4wdpv6/MT4hTVYA/ZBj58nZkFuvijqGi6Mog5RH9WyokdVF0DlFVwuoVzGkuPmDVQQ1XNU0Lv9cVQVfAo2q0RRIIqOde/w4H19lzKiZ2EtiBHYdu4Mg55Xo4wBBMAGwbTRyrN6d6XKpwGRUuQ+EyNLBXZ6CHWVX1yh71HM1Uk+MEfpvX9jcYbFWsS0y2oVFwqJ2zpPOr8F+yqIhqOuvcqs3fRBc1lTpuXVYIt5brutYE+27YCiFJAAgJY9sBe1AIHeUHwGmOS+LBoipVn9sfW+s7s9+ZXZFn4AO92dixY4fhxL0JYOLceK5PbhBC5MbBkq3EmVjI9cbNm9vtoRAsYwY4S5PibEUAsT0fHzvCxjBwhN3XQy+l3Ym/a/90GKY5zFzhQfZdFD9RFAcH3SiTQFTzezJBRFTg9qjfmM+jfYKRZ1v+Edo7QY/28+oYxPfP6UYP4uuTOed+516hLLpLR1P3/fYM3eNiIBnvf8pbQ3slOn3T+sZm9lmbOT9852mpOHjPabx7YpclvUatNwjxOjp17+wt0xzuiHj+YNj9s8d3T4m3uS3ZxPGTo7MhdE/MhsNb0iugf+81ybvC+fBTPps/qKThr9voXWGyLEtISnZhPZHY9+Uh84ieAmf3iCkrb4glGCRjsqTqqYfqGFpdsI7Bu+J57Nm1ePwLisd1dsWDV2kf3JCQZp37CgR1/jmUzABxvHygwFSLq778an+M+6JYXsduK41pISHMle1j878G5VjLDCnum14y/o8C39m2/wPFYmPetRgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">44b493fb839792106e57c6a6feaad368</block>
+        <comment/>
+        <connected_to>c5692107-90f7-4662-9583-8a1311f28c13</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>6906537f839792106e57c6a6feaad3ec</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>650a51fc-8138-45c5-b1e0-4aa840deae5f</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">38690b3f835792106e57c6a6feaad3a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned>active,retry_count,retry_timeout,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>9106537f839792106e57c6a6feaad3e3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>7bc05765-9567-494e-8c62-dceecf4a0bd7</ui_id>
+        <values>H4sIAAAAAAAA/+2Z2WrbQBSGXyXMVQuWq31Jr0JCINCNxu1NG8RssoeONepolMQNfveekeSlWQyFOqSJ7mbObP9ZPuSDb5BqTNWYeqKO6lpMS3T47WKERGltML5BgqFDhEaoxHMOI0yNuOQwv8SysQYXxkzUlcSLr72pwLK2W+hMSKZ5f2eFNVxhuEaHN7eW2jdIGmcuCYo0iJLM99yYRwmNcVxwjFkQU7hQYsIlbD1aibgtyiwqOydKSY7L3vCuPzXRDX9z2mtTmlkl7gjxa8NLxkFCq3uE5rhk2Ci9WFs0x+xjKTeGmShNF5Y5vq7FL3g0dO2+goNTlHdr62neB6gzFyfY4HOjG2oa3W+lMyUor7twMF7gRprjbVu34WNlhCq7IwYTuTqtZDMvP3TBQOsLbuejN5/cn62mBp28srGwzvWeFuczdfV55cipKNuw9YtSUSzXM2yMFqQxVvINasTkdjI6073p4JLP4dl8jqtKlNO80upStE+Bc/PxVMJkXEh1BRJtmY5tylU5hkTh8SnYT1rzV6yFDct7uAYO2ye/lOJnw89shUW4COIkpY4XEOqEEYudjAXUwUEUJS71WUgIWo5QvaiPJa7rTUAhk/nPxvrahbePUt7lwh6hWlSmr8tDyC1f2Wws+vqE0a598AoURHkwrcdTbj5pBS6Yxavv6Dr3ojiJfDevZ1j/yN0xlB+famxDkHeXf0ejgzYPr9+i5XI5ugMuXK4XOVUNJHdD7114/5rbINzFbVJscfvZajg47jXcK6wnuHWwzeA2wWdr60vCd49sbsL8J5ubQD8KmIzSzI8S4iRRmjhhzHwHk9R1WMY9zw9jSv1gL2Bu195+6Nx6wSIa7MbTiDmHD/I/BnTnhzX17wA6Wat4QNwA6QuENI15SkjKHcKy1AmThDtZEgZOmmUsc1M/i0O8R0hX1bdPTPs3LKi++xCptNHaqocDW5x6d0H1/p5UupPUaIvU407FwaRVca+0gdIXSCkmhHrUixzuZvAbl8W+k8WscDySeJS6RUDd8J9Q2kZjeWEJ6PQM7eIzgWRoF4d2cWgX/1t8n/83bmgXh3ZxgPSJQzq0i0O7OFD61Cl9/HaRcSpq0Dmxos5W/zPahQWUpaDbpiulf1gPN7blb5DzOfaxHAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">eb6a8f7f835792106e57c6a6feaad33e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>9506537f839792106e57c6a6feaad3e6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxjjx0pS8lZTCoFthLX3ZOnMjyYmYLHn6SOqZ/Pdd2bIT+rG1dLCX5ck6uh/nHt1DWqK9q72zN/rMWrFWZPHlLiFCBQy/W6Kg4mRBqFZMOKFV0QEJ2YL04QI/mbC1hOb2gNCNkMzwWK0GgzmOG7JoH1wJhgkrBlO6yt7P8yyf5Fl2MpnS6Twv8XcC81mGBSWsuMTQ5UDj3WWHJM/yc00dcOuMUOt4voxVrgdQGxZYTbIsIfzeccU4EipBWp6QChQDp00zIoYDu1LyAGyEcv3EFdxb8RM7TmezEFhynJFGOcZjEaXq4fIcHCAXT503o3JaUG57dRgvwUu3PMb6gKs6zNqnOFjJIVtLX6lPvSRkLHD0Mt4iCV6HSQP1OEd5vdG7zwPLC6E6WeKl1BTkeAKH4q28C3xawiWvsFBRQV2jpEVt9FZ0ycilStcSD2kp9Q6bhvVKgQbiKQoL6QXi5x18C0aEKT5iGUzeJ8Q2dinB2sMsKGLxwwcm/WRxhqKXIaRQI2p3hg22PNLdJ48X+Gh327ajto3dU3xNvjbQrZH1lPLSS7nff/VZljN8J/7tYQb1xgQSzjQxjv825LFb/gmH1/mTzSf5afmcP0/pU/58wpmvNOX0T6YMYrzQk1mo9d+UbzIlLoMteo/F2brmf9Gsd8GZfc9RayosUrsJ2IfhTylcNLhdgh5DO22+h6EO2P4XxiZUjN4GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">2e33df3b839792106e57c6a6feaad332</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>8e08bfd3-ecd9-4b76-a01d-7ad67677e41d</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>d506537f839792106e57c6a6feaad3e8</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>c5692107-90f7-4662-9583-8a1311f28c13</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8zPaeQkpCu8TAiEhMSGNBAvDFk3ttNac+3MdoCu6n/fdZwWNNgHGo97q8+9vvecEx91TWwfuj74K3vkvZobcnhzmxFlIoa/18TAUpJDwq0RKihr2ABk5A50HwtnJsi5g1jaOwWleyc/YFko32lYXf++iy+UFk6OWztwODtIRw7XP5WUwCEthbY44AWvymlVUlrO9otmWjVFKSqQUOFADY3U2Hq8pbt3PiDZL3WEVRdxH5wy8/F8Pk653ILWiciqoBmRD0EaIZFPC9rLjCzBCAjWrXaIkyAujH4EFsoEHEdi84NX33FhWdexsZUokctU3B3Z6F6C2xMIgFR6HtC2hPGFVVz6ZI6QLfQ6HD/FUsNFF6WmKwEavb1tdb80n5IjZDdg+7EQ6T2SkF1UGqmPOtrLhb3/vGV5qszgyljUloPenSCgd00fIp81kVoucRBbQteho6xz9k4Nl5HLMp9rPOSttve4NL7CHHgknqOxkJ8ifjLA1+BUVPERx+DlRLMBrzgbXiyOQ5sk2WTEr/yxBu8fRaK77FsfKSbJoziW/IlXuFNdOMLNd3LUscmeB+DJ21+vOad0WopiQusZn+w3DZ80M5hNmqJqawkFnzXvc8aSHOYDhN4zlnMr5Gbz7ktPaSXo87i83eDXJewA6rYuaP1ywvanLyXshWy9MlblH2IVv+lfpopS+j9W/xwr5VkKw6htWP6GqbqNEUo7d15z5ZHaVcTOtv8+sbDCx6X4U+jeuq9R1CO2+QH7BIRrxwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6e33df3b839792106e57c6a6feaad334</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Translate Integration">c506537f839792106e57c6a6feaad396</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>c5692107-90f7-4662-9583-8a1311f28c13</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>e106537f839792106e57c6a6feaad3ea</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:37</sys_updated_on>
+        <ui_id>191665cd-710e-472c-a141-738a576d247d</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWteRkkpFLoV1tKXrZhrWU7EZMnTR1LP+L/vyh9JaFPWsj7uJUTnXt17zokOaYlytnbW3KsLY/hakuX3x4Bw6TH83hIJFSNLQpUsuOVKZj0QkC0I5wvXZiaVndkNmwkwdsYt0+AbP2NTwU0toHl4Sy/dcFFoNjKoQeMerJNl+6zECxxVRlDG5zSmabJIkyhKPp3F+SLN46RIgUGKAwXkTGDraqI+u+mR4FVNtqk9bqzmcj2eb8YpdxOodOFZxVFA2JNlsmDIpwRhWEAqkAVYpZs9ohkUt1IcgA2XFscR3/xk+G9cmMznvrFkKJGyobg/ZqOHA1xeggWk4qh1emylG8UpM4M5BSvBCbs6xoaG29pLHa5YyMV0WwlXya+DI2Q/YPrJEHEGSbDaK/XURx3l3Ubtvk0sr7jsXRmLQlEQ+xNY9C531vNpCROswkFZBXWNjma1VlveX0YuVbgWeAhLoXa41L/IEKgnHqKxEF4hftnDD6C5V/EFx+DlgWYOhtOsf704Dm1ipAuIacwK35s5iER3s1/OUxwkj+KywR9/hWpe2wvcvGWjji54GYajHLRtz3k70gqp09qPtLrpuh8uilLafxbPGzXDlowqJ23XvczMh819X77OYV7O42h+Ol9ni1P5OpGsd4Yq+Uuo/C/6xkxFUfQ/VP8cKm6yIQqjtn75B2bq0Qdo2Ln3mnKD1O49dj39D/lCg4+L02Nop/RPL+qAdX8Aozn+MNEGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c506537f839792106e57c6a6feaad396^sys_idNOT IN1d06537f839792106e57c6a6feaad3cb,d106537f839792106e57c6a6feaad3d3,d506537f839792106e57c6a6feaad3d6,d906537f839792106e57c6a6feaad3d9,dd06537f839792106e57c6a6feaad3cf,dd06537f839792106e57c6a6feaad3dc"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=408c884b-aba2-4f31-a9be-a194e4279414</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_succefull</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Succefull</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>1d06537f839792106e57c6a6feaad3cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=86e8bb8e-bd98-477e-9743-899d9082964a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>d106537f839792106e57c6a6feaad3d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=abbc1c15-e09c-4d62-96df-1b71cc0f3c04</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>d506537f839792106e57c6a6feaad3d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=5af3678c-13bc-45d6-9d3c-a35570c2d4bb</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>d906537f839792106e57c6a6feaad3d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=dcc9257b-7587-46d2-ab80-d9e11246cc23</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>dd06537f839792106e57c6a6feaad3cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a8178215-8312-4ebe-ad80-2e88b0a43b27</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_error</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Integration Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Translate Integration">c506537f839792106e57c6a6feaad396</model>
+        <model_id>c506537f839792106e57c6a6feaad396</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_c506537f839792106e57c6a6feaad396</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>dd06537f839792106e57c6a6feaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396^sys_idNOT IN9506537f839792106e57c6a6feaad3ad,d506537f839792106e57c6a6feaad3a6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:11</sys_created_on>
+        <sys_id>9506537f839792106e57c6a6feaad3ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:10</sys_created_on>
+        <sys_id>d506537f839792106e57c6a6feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Shark Training Scheduling" source="x_1567520_shark_0">e6f60aaa839712106e57c6a6feaad365</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Shark Training Scheduling">e6f60aaa839712106e57c6a6feaad365</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 21:15:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c506537f839792106e57c6a6feaad396"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c506537f839792106e57c6a6feaad396"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c506537f839792106e57c6a6feaad396"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>70f5cbf7835792106e57c6a6feaad3bd</sys_id>
+        <latest_snapshot>c506537f839792106e57c6a6feaad396</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=70f5cbf7835792106e57c6a6feaad3bd^sys_idNOT INf506937f839792106e57c6a6feaad337"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f506937f839792106e57c6a6feaad337","name":"plan","plan_signature":null}}</plan>
+        <plan_id>70f5cbf7835792106e57c6a6feaad3bd</plan_id>
+        <snapshot>e9fee77f831b92106e57c6a6feaad353</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-31 21:15:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f506937f839792106e57c6a6feaad337</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-31 23:03:13</sys_updated_on>
+        <trigger display_value="">7906937f839792106e57c6a6feaad335</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=70f5cbf7835792106e57c6a6feaad3bd"/>
+</record_update>
